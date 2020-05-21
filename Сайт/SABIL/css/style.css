@@ -820,7 +820,7 @@ ul, ol, li {
 /* 4.8. Intro / 8 */
 
 .intro-benifits {
-	background: #e2574c;
+	background: #f8f8f8;
 	background-size: cover;
 }
 .benifits h3{
@@ -1584,17 +1584,17 @@ ul, ol, li {
 }
 
 .btn.btn-primary {
-	background: #5D749C;
-	border: 1px solid #5D749C;
+	background: #414e5b;
+	border: 1px solid #414e5b;
 	border-radius: 100px;
 	color: #fff;
 	margin-left: 6px;
 }
 
 .btn.btn-primary:hover {
-	border: 1px dashed #5D749C !important;
+	border: 1px dashed #414e5b !important;
 	background: transparent;
-	color: #5D749C;
+	color: #414e5b
 }
 
 .btn.btn-primary-pricing {
@@ -1887,7 +1887,7 @@ ul, ol, li {
 /* 8. ABOUT */
 
 .about-inline {
-	padding: 100px 0 0 0;
+	padding: 50px 0 0 0;
 }
 
 .about-inline .ai-slide {

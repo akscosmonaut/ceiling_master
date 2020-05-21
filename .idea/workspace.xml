@@ -1,175 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="138dffcb-b750-4213-b69d-10653db2a9ab" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="138dffcb-b750-4213-b69d-10653db2a9ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Сайт/SABIL/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сайт/SABIL/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сайт/SABIL/images/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сайт/SABIL/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Сайт/SABIL/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сайт/SABIL/images/bg/benifits.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Сайт/SABIL/images/bg/benifits.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сайт/SABIL/index8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Сайт/SABIL/index8.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="2025520446">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.178" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="PNG" value="3" />
-          <entry key="css" value="4" />
-          <entry key="html" value="29" />
-          <entry key="jpg" value="6" />
-          <entry key="js" value="1" />
-          <entry key="png" value="26" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="29" />
-          <entry key="Image" value="35" />
-          <entry key="JavaScript" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="37" />
-          <entry key="html" value="498" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="37" />
-          <entry key="HTML" value="498" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="ceiling_master">
-      <favorite_root url="file://$PROJECT_DIR$/Сайт/SABIL/index8.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-    </favorites_list>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Сайт/SABIL/index8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="142" column="18" lean-forward="true" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Сайт/SABIL/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="861" column="16" selection-start-line="861" selection-start-column="16" selection-end-line="861" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>.menu-wrap</find>
-      <find>logo.</find>
-      <find>learn more</find>
-      <find>1.jp</find>
-      <find>.jpg</find>
-      <find>btn btn-lg btn-primary</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Aksinya\PycharmProjects\ceiling_master\template</dir>
-      <dir>C:\Users\Aksinya\PycharmProjects\ceiling_master</dir>
-      <dir>C:\Users\Aksinya\PycharmProjects\ceiling_master\Сайт\SABIL\css</dir>
-    </dirStrings>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/template/index.html" />
-        <option value="$PROJECT_DIR$/SABIL/index8.html" />
-        <option value="$PROJECT_DIR$/Сайт/SABIL/elements-counters.html" />
-        <option value="$PROJECT_DIR$/Сайт/SABIL/index8.html" />
-        <option value="$PROJECT_DIR$/Сайт/SABIL/css/style.css" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1273" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ceiling_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ceiling_master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ceiling_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ceiling_master" type="462c0819:PsiDirectoryNode" />
-              <item name="Сайт" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ceiling_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ceiling_master" type="462c0819:PsiDirectoryNode" />
-              <item name="Сайт" type="462c0819:PsiDirectoryNode" />
-              <item name="SABIL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ceiling_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ceiling_master" type="462c0819:PsiDirectoryNode" />
-              <item name="Сайт" type="462c0819:PsiDirectoryNode" />
-              <item name="SABIL" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ceiling_master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ceiling_master" type="462c0819:PsiDirectoryNode" />
-              <item name="Сайт" type="462c0819:PsiDirectoryNode" />
-              <item name="SABIL" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1cEEP0ymp7SlUpAOkvY67VUugn1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Сайт/SABIL/images" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aksinya\PycharmProjects\ceiling_master\Сайт\SABIL\images" />
+      <recent name="C:\Users\Aksinya\PycharmProjects\ceiling_master\Сайт\SABIL\images\bg" />
       <recent name="C:\Users\Aksinya\PycharmProjects\ceiling_master\Сайт" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -184,216 +66,21 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="DB Browser" weight="0.32955465" />
-      <window_info id="Favorites" sideWeight="0.50058615" side_tool="true" visible="true" weight="0.24959481" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49941385" visible="true" weight="0.24959481" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3299293" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Mongo Explorer" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SABIL/index2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index3.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index4.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index5.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index6.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index7.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index10.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index11.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index12.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index13.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index14.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index15.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index16.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index18.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/portfolio-2col.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index17.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/error.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/favicon.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/logo.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/a3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/a2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/a1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/success.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/sabil.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/12.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/a1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/a2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/a3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/watch.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/images/success.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/12.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/blog/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/blog/3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/bg/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/bg/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="994">
-          <caret line="399" column="71" selection-start-line="399" selection-start-column="67" selection-end-line="399" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/bg/8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/images/bg/9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/index9.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SABIL/index8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="214" column="22" lean-forward="true" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/css/icons/icon2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="1596" column="31" lean-forward="true" selection-start-line="1596" selection-start-column="31" selection-end-line="1596" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/elements-counters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="330" column="10" lean-forward="true" selection-start-line="297" selection-start-column="4" selection-end-line="330" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/index8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="142" column="18" lean-forward="true" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Сайт/SABIL/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="861" column="16" selection-start-line="861" selection-start-column="16" selection-end-line="861" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="1627" y="303" width="585" height="801" key="find.popup" timestamp="1590093555511">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1627" y="303" width="585" height="801" key="find.popup/303.1440.1280.693/0.0.2560.1400@0.0.2560.1400" timestamp="1590093555511" />
   </component>
 </project>
