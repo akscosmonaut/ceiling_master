@@ -118,7 +118,7 @@ ul, ol, li {
 }
 
 .space30 {
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 }
 
 .space40 {
@@ -234,15 +234,15 @@ ul, ol, li {
 
 .navbar-lg .navbar-brand {
 	padding: 10px 0 10px;
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #fff;
+	color: #2f4870;
 	letter-spacing: 5px;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #fff;
+	color: #2f4870;
 	background-color: transparent;
 }
 
@@ -250,7 +250,7 @@ ul, ol, li {
 	padding: 40px 12px 40px;
 	font-size: 12px;
 	line-height: 1.6;
-	color: #fff;
+	color: #2f4870;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -306,7 +306,7 @@ ul, ol, li {
 
 .dropdown-menu > li > a {
 	padding: 12px 20px;
-	color: #fff;
+	color: #2f4870;
 	text-transform: none;
 	font-size: 11px;
 	font-weight: 400;
@@ -373,7 +373,7 @@ ul, ol, li {
 }
 
 .section-head-lite p {
-	color: #fff;
+	color: #2f4870;
 	opacity: 0.7;
 }
 
@@ -1672,6 +1672,7 @@ ul, ol, li {
 
 .services {
 	padding: 100px 0 0;
+	color: #343434333;
 }
 
 .service-box {
@@ -2086,6 +2087,58 @@ ul, ol, li {
 	top: 7px;
 	font-size: 20px;
 }
+
+.basic-services {
+	padding: 30px 0 30px 0;
+	background: #ffffff !important;
+}
+.basic-services p{
+	font-style:italic;
+}
+.basic-services h3 {
+	font-weight: 600;
+	font-size: 28px;
+	letter-spacing: 0.2px;
+	color: #fff;
+}
+.basic-services p {
+	margin: 0 0 0px;
+	color: #fff;
+}
+
+
+.advantages {
+	padding: 30px 0 30px 0;
+	background: #c9c9c9 !important;
+}
+.advantages p{
+	font-style:italic;
+	color: #414e5b;
+	padding: 30px 0 30px 0;
+}
+.advantages h3 {
+	font-weight: 600;
+	font-size: 28px;
+	letter-spacing: 0.2px;
+	color: #2f4870;
+	text-align: center;
+}
+
+.advantages h4 {
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 0.1px;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+
 
 /* 9. VIDEO BOX */
 
@@ -3088,7 +3141,7 @@ ul, ol, li {
 /* 22. ELEMENTS */
 
 .elements-content {
-	padding: 0px 0;
+	padding: 30px 0;
 }
 
 .border-top {
@@ -3628,8 +3681,8 @@ blockquote.pull-right {
 /* 24. FOOTER */
 
 footer {
-	background: #343434;
-	padding: 80px 0 30px;
+	background: #c9c9c9;
+	padding: 50px 0 30px;
 }
 
 footer .list-inline li {
@@ -4417,8 +4470,9 @@ footer .list-inline li {
 }
 
 .dropcap {
-	line-height: 28px;
+	line-height: 18px;
 	font-size: 15px;
+	padding: 20px 0 20px 0;
 }
 
 .dropcap .dropcap-square {
@@ -4436,17 +4490,15 @@ footer .list-inline li {
 }
 
 .dropcap .dropcap-radius {
-	border: 2px solid #e5e5e5;
-	border-radius: 3px;
 	float: left;
 	width: 60px;
 	height: 60px;
 	line-height: 60px;
 	font-size: 32px;
 	text-align: center;
-	color: #999;
-	font-family: Josefin Sans;
-	margin: 8px 10px 0px 0px;
+	color: #2f4870;
+	font-family: 'Bellota Text', sans-serif;
+
 }
 
 .dropcap .dropcap-round {
@@ -4992,12 +5044,11 @@ input:focus, textarea:focus {
 }
 
 .footer2 {
-	background: #343434;
+	background: #c9c9c9;
 }
 
 .footer2 .google-map {
 	border: 1px solid #555;
-	padding: 5px;
 	height: 290px;
 }
 
@@ -5036,7 +5087,7 @@ input:focus, textarea:focus {
 }
 
 .footer2 h5 {
-	color: #fff;
+	color: #2f4870;
 	font-size: 16px;
 	font-weight: bolder;
 	text-transform: uppercase;
@@ -5062,7 +5113,7 @@ input:focus, textarea:focus {
 	margin-right: 10px;
 	margin-left: 0px;
 	margin-top: 30px;
-	color: #fff;
+	color: #2f4870;
 }
 
 .footer2 .footer-social {
