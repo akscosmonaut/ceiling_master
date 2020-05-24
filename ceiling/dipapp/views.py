@@ -6,7 +6,7 @@ def index(request):
 
 
 def ceiling_kind(request):
-    return render(request, "ceiling_kind.html")
+    return render(request, "ceiling-kind.html")
 
 
 def advice(request):

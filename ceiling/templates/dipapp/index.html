@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load staticfiles %}
+
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -12,22 +14,22 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/favicon.html">
+        <!-- FAVICON -->
+    <link rel="shortcut icon" href="static/images/favicon.html">
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
-    <link rel="stylesheet" href="css/icons/style.css">
-    <link rel="stylesheet" href="css/icons/icon2/style.css">
-    <link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
-    <link rel="stylesheet" href="css/ilmosys-icons.css">
+    <link rel="stylesheet" href="{% static "css/icons/fontawesome/css/style.css" %}" />
+    <link rel="stylesheet" href="{% static "css/icons/style.css" %}" />
+    <link rel="stylesheet" href="{% static "css/icons/icon2/style.css" %}" />
+    <link rel="stylesheet" href="{% static "js/vendors/swipebox/css/swipebox.min.css" %}" />
+    <link rel="stylesheet" href="{% static "css/ilmosys-icons.css" %}" />
 
     <!-- THEME / PLUGIN CSS -->
-    <link rel="stylesheet" href="js/vendors/slick/slick.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{%static "js/vendors/slick/slick.css" %}" />
+    <link rel="stylesheet" href="{%static "css/style.css" %}" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +48,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand brand"><img
-                            src="images/logo.png"></a>
+                            src="{% static "images/logo.png" %}" /></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -66,19 +68,19 @@
                             <a href="index.html">Главная</a>
                         </li>
                         <li class="dropdown">
-                            <a href="ceiling-kind.html">Виды потолков</a>
+                            <a href="ceiling_kind">Виды потолков</a>
                         </li>
                         <li class="dropdown mm-menu">
-                            <a href="price.html">Цены</a>
+                            <a href="price">Цены</a>
                         </li>
                         <li class="dropdown">
-                            <a href="gallery.html">Готовые работы</a>
+                            <a href="gallery">Готовые работы</a>
                         </li>
                         <li class="dropdown">
-                            <a href="advice.html">Советы мастера</a>
+                            <a href="advice">Советы мастера</a>
                         </li>
                         <li class="dropdown">
-                            <a href="review.html">Отзывы</a>
+                            <a href="review">Отзывы</a>
                         </li>
                     </ul>
                 </div>
@@ -141,7 +143,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <img src="images/photo1.jpg"  class="pull-left" alt=""/>
+                    <img src="{% static "images/photo1.jpg" %}" / class="pull-left" alt=""/>
                 </div>
 
 <!-- Модальное окно -->
@@ -191,7 +193,7 @@
 
         <div class="row center-content">
             <div class="col-md-6">
-                <img src="images/bg/benifits.jpg" class="pull-left" width=90%
+                <img src="{% static "images/bg/benifits.jpg" %}" / class="pull-left" width=90%
                      alt=""/>
             </div>
 
@@ -329,22 +331,22 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="gallery-item space30">
-						<a href="images/mainceiling/1.jpg" class="swipebox-video">
-							<img src="images/mainceiling/1.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/1.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/1.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
 
 					<div class="gallery-item space30">
-						<a href="images/mainceiling/2.jpg" class="swipebox-video">
-							<img src="images/mainceiling/2.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/2.jpg" %}" /  class="swipebox-video">
+							<img src="{% static "images/mainceiling/2.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
 
                     <div class="gallery-item space30">
-						<a href="images/mainceiling/3.jpg" class="swipebox-video">
-							<img src="images/mainceiling/3.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/3.jpg" %}" /  class="swipebox-video">
+							<img src="{% static "images/mainceiling/3.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
@@ -352,22 +354,22 @@
 
 				<div class="col-md-4">
 					<div class="gallery-item space30">
-						<a href="images/mainceiling/4.jpg" class="swipebox-video">
-							<img src="images/mainceiling/4.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/4.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/4.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
 
 					<div class="gallery-item space30">
-						<a href="images/mainceiling/5.jpg" class="swipebox-video">
-							<img src="images/mainceiling/5.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/5.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/5.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
 
                     <div class="gallery-item space30">
-						<a href="images/mainceiling/6.jpg" class="swipebox-video">
-							<img src="images/mainceiling/6.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/6.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/6.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
@@ -375,22 +377,22 @@
 
                 <div class="col-md-4">
 					<div class="gallery-item space30">
-						<a href="images/mainceiling/7.jpg" class="swipebox-video">
-							<img src="images/mainceiling/7.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/7.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/7.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
 
 					<div class="gallery-item space30">
-						<a href="images/mainceiling/8.jpg" class="swipebox-video">
-							<img src="images/mainceiling/8.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/8.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/8.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
 
                     <div class="gallery-item space30">
-						<a href="images/mainceiling/9.jpg" class="swipebox-video">
-							<img src="images/mainceiling/9.jpg" class="img-responsive" alt=""/>
+						<a href="{% static "images/mainceiling/9.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/9.jpg" %}" / class="img-responsive" alt=""/>
 							<i class="icon2-plus-circle"></i>
 						</a>
 					</div>
@@ -414,7 +416,7 @@
                         <div class="space10"></div>
                         <h4>Всем клиентам, обратившимся в нашу компанию, до 1 сентября 2020 года, мы предоставляем скидку 20%.</h4>
                         <div class="space20"></div>
-                        <a href="#" class="btn btn-lg btn-dark">Оставить заявку</a>
+                        <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#orderModal">Оставить заявку</button>
                     </div>
                 </div>
             </div>
@@ -496,7 +498,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <a href="index-2.html" class="footer-logo"><img
-                                src="images/dark_logo.png"></a>
+                                src="{% static "images/logo.png" %}" /></a>
                         <div class="space20"></div>
                     </div>
 
@@ -526,19 +528,19 @@
 
 
     <!-- JAVASCRIPT =============================-->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/vendors/slick/slick.min.js"></script>
-    <script src="js/vendors/jquery.easing.min.js"></script>
-    <script src="js/vendors/stellar.js"></script>
-    <script src="js/vendors/isotope/isotope.pkgd.js"></script>
-    <script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
-    <script src="js/vendors/mc/main.js"></script>
+    <script src="{% static "js/jquery.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/vendors/slick/slick.min.js" %}"></script>
+    <script src="{% static "js/vendors/jquery.easing.min.js" %}"></script>
+    <script src="{% static "js/vendors/stellar.js" %}"></script>
+    <script src="{% static "js/vendors/isotope/isotope.pkgd.js" %}"></script>
+    <script src="{% static "js/vendors/swipebox/js/jquery.swipebox.min.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+    <script src="{% static "js/vendors/mc/jquery.ketchup.all.min.js" %}"></script>
+    <script src="{% static "js/vendors/mc/main.js" %}"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/vendors/gmap.js"></script>
+    <script src="{% static "js/vendors/gmap.js" %}"></script>
 
 </body>
 

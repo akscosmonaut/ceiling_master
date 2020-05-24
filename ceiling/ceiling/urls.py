@@ -3,6 +3,7 @@ from django.urls import path
 from dipapp import views
 
 urlpatterns = [
+    path('index', views.index),
     path('', views.index),
     path('ceiling_kind', views.ceiling_kind),
     path('gallery', views.gallery),
