@@ -89,9 +89,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var value = $(this).scrollTop();
         if (value > 80)
-            $(".navbar-lg .navbar-nav > li > a").css("color", "#111" );
+            $(".navbar-lg .navbar-nav > li > a").css("color", "#2f4870" );
         else
-            $(".navbar-lg .navbar-nav > li > a").css("color", "#fff");
+            $(".navbar-lg .navbar-nav > li > a").css("color", "#2f4870");
     });
 	
 	// Fixed Header
@@ -228,3 +228,10 @@ $(document).ready(function() {
 
 });
 
+//GALLERY
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+
+
+this.modalForm.reset();

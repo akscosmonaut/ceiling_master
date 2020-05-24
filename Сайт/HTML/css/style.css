@@ -62,7 +62,7 @@ Author:  divine-store
 body {
 	background: #fff;
 	font-family: 'Bellota Text', sans-serif;
-	color: #777;
+	color: #2f4870;
 	font-weight: 400;
 	font-size: 15px;
 	letter-spacing: 0.5px;
@@ -826,12 +826,12 @@ ul, ol, li {
 .benifits h3{
 	font-size: 32px;
 	line-height:45px;
-	color:#fff;
+	color:#414e5b;
 	font-weight:700;
 }
 .benifits p{
-	color:#fff;
-	font-size: 16px;
+	color:#414e5b;
+	font-size: 18px;
 	line-height:26px;
 }
 .benifits p span{
@@ -1560,14 +1560,12 @@ ul, ol, li {
 
 .btn {
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 24px;
 	font-weight: bold;
 	text-transform:capitalize;
 	padding: 11px 28px;
 	border: none;
-	border-radius: 4px;
-	font-family: Josefin Sans;
-	border-radius: 100px;
+	font-family: 'Bellota Text';
 }
 
 .btn i {
@@ -1586,9 +1584,8 @@ ul, ol, li {
 .btn.btn-primary {
 	background: #414e5b;
 	border: 1px solid #414e5b;
-	border-radius: 100px;
 	color: #fff;
-	margin-left: 6px;
+
 }
 
 .btn.btn-primary:hover {
@@ -1631,14 +1628,14 @@ ul, ol, li {
 
 .btn.btn-dark {
 	color: #fff;
-	background-color: #e2574c;
-	border: 1px solid #e2574c;
+	background-color: #414e5b;
+	border: 1px solid #414e5b;
 }
 
 .btn.btn-dark:hover {
 	color: #e2574c;
 	background-color: transparent;
-	border: 1px dashed #e2574c;
+	border: 1px dashed #414e5b;
 }
 
 .btn.btn-lg {
@@ -2136,6 +2133,14 @@ ul, ol, li {
 
 .right-align {
 	text-align: right;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.other-menu {
+    background: #262626 url(../images/bg/8.jpg) no-repeat center;
 }
 
 
@@ -2983,15 +2988,7 @@ ul, ol, li {
 	margin: 0 0 40px;
 }
 
-
-
-
 /* 19. GOOGLE MAP */
-
-#map {
-	width: 100%;
-	height: 300px;
-}
 
 /* 20. CONTACT */
 
@@ -3124,19 +3121,6 @@ ul, ol, li {
 }
 
 /* 07. MAILCHIMP */
-
-.ketchup-error {
-	display: none !important;
-}
-
-#result {
-	width: 100%;
-	display: table;
-	text-align: center;
-	font-size: 12px;
-	padding: 5px 15px;
-	margin-top: 5px;
-}
 
 /* 22. ELEMENTS */
 
@@ -6121,6 +6105,20 @@ input:focus, textarea:focus {
 
 	.table-wrap table {
 		width: 850px;
+	}
+
+	.table-wrap2 {
+		width: 100%;
+		overflow: auto;
+		overflow-y: hidden;
+		margin: auto;
+
+	}
+
+	.table-wrap2 table {
+		width: 400px;
+		text-align: center;
+		margin: auto;
 	}
 
 	.nav-tabs > li > a {

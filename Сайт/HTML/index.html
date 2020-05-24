@@ -65,27 +65,70 @@
                         <li class="dropdown mm-menu">
                             <a href="index.html">Главная</a>
                         </li>
-
                         <li class="dropdown">
-                            <a href="about.html">Виды потолков</a>
+                            <a href="ceiling-kind.html">Виды потолков</a>
                         </li>
                         <li class="dropdown mm-menu">
-                            <a href="elements-alerts.html">Цены</a>
+                            <a href="price.html">Цены</a>
                         </li>
                         <li class="dropdown">
-                            <a href="portfolio-2col.html">Готовые работы</a>
+                            <a href="gallery.html">Готовые работы</a>
                         </li>
                         <li class="dropdown">
-                            <a href="blog-classic.html">Советы мастера</a>
+                            <a href="advice.html">Советы мастера</a>
                         </li>
                         <li class="dropdown">
-                            <a href="contact.html">Отзывы</a>
+                            <a href="review.html">Отзывы</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="uCalc_286606"></div>
+                          <script> var widgetOptions286606 = { bg_color: "transparent" };
+                          (function() { var a = document.createElement("script"), h = "head"; a.async = true;
+                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })(); form.close();</script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+    <div class="bd-example">
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class="modal-title text-center" id="exampleModalLabel">Оставить заявку</h2>
+        </div>
+        <div class="modal-body">
+            <p>Оставьте заявку и мы с Вами свяжемся в ближайшее время.</p>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="phone" placeholder="Телефон">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- INTRO -->
     <div class="intro intro8">
         <div class="container">
@@ -93,13 +136,16 @@
                 <div class="col-md-8">
                     <h3>Монтаж натяжных потолков любого уровня сложности</h3>
                     <p>Работаем без предоплаты.</p>
-                    <a href="#" class="btn btn-lg btn-primary">Рассчитать
-                        стоимость</i></a>
+                    <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Рассчитать
+                        стоимость</button>
                 </div>
 
                 <div class="col-md-2">
                     <img src="images/photo1.jpg"  class="pull-left" alt=""/>
                 </div>
+
+<!-- Модальное окно -->
+
             </div>
         </div>
     </div>
@@ -150,8 +196,9 @@
             </div>
 
             <div class="container">
+                <div class = "space30"></div>
 
-                <div class="col-md-9 benifits col-md-push-1">
+                <div class="col-md-10 benifits col-md-push-1">
                     <h3>Натяжные потолки - это наш профиль</h3> <br/>
                     <p>Наша компания занимается проектированием, изготовлением
                         полотен и монтажом всей конструкции.
@@ -164,8 +211,7 @@
                     <p><span>=</span> Монтаж в городе и по области</p>
                     <p><span>=</span> Без посредников
                     <div class="space30"></div>
-                            <a href="#" class="btn btn-lg btn-dark">Оставить
-                                заявку<i class="icon-arrow-right"></i></a>
+                      <button type="button" class="space30 btn btn-lg btn-dark" data-toggle="modal" data-target="#orderModal">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -359,27 +405,24 @@
         <div class="space30"></div>
 
         <!-- PARALLAX -->
-        <section class="parallax-content parallax1 text-center"
-                 data-stellar-background-ratio="0.4">
-            <div class="overlay"></div>
+        <section class="parallax1 text-center">
+            <div class="advantages">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h4>Всем клиентам скидки!</h4>
-                        <p>Всем клиентам, обратившимся в нашу компанию, до 1 сентября 2020 года, мы предоставляем скидку 20%.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#" class="btn btn-lg btn-dark">Оставить заявку<i class="icon-arrow-right"></i></a>
-                        </div>
+                    <div class="col-md-12">
+                        <h3>Всем клиентам скидки!</h3>
+                        <div class="space10"></div>
+                        <h4>Всем клиентам, обратившимся в нашу компанию, до 1 сентября 2020 года, мы предоставляем скидку 20%.</h4>
+                        <div class="space20"></div>
+                        <a href="#" class="btn btn-lg btn-dark">Оставить заявку</a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
         <!-- TESTIMONIALS -->
         <div class="testimonials-white">
-
             <div class="container">
                 <div class="about-inline text-center">
                     <div class="container">
