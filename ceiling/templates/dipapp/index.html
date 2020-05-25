@@ -2,6 +2,7 @@
 <html lang="en">
 
 {% load staticfiles %}
+{% load bootstrap_tags %}
 
 <head>
 
@@ -65,7 +66,7 @@
                      id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown mm-menu">
-                            <a href="index.html">Главная</a>
+                            <a href="index">Главная</a>
                         </li>
                         <li class="dropdown">
                             <a href="ceiling_kind">Виды потолков</a>
@@ -95,7 +96,7 @@
                         <div class="uCalc_286606"></div>
                           <script> var widgetOptions286606 = { bg_color: "transparent" };
                           (function() { var a = document.createElement("script"), h = "head"; a.async = true;
-                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })(); form.close();</script>
+                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
                       </div>
                     </div>
                   </div>
@@ -114,19 +115,22 @@
         </div>
         <div class="modal-body">
             <p>Оставьте заявку и мы с Вами свяжемся в ближайшее время.</p>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Имя">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="phone" placeholder="Телефон">
-            </div>
+          <form method="POST" novalidate>
+                {% csrf_token %}
+              {{ form|as_bootstrap }}
+            <!--<div class="form-group">-->
+                <!--<table>-->
+                    <!--</table>-->
+              <!--&lt;!&ndash;<input type="text" class="form-control" id="phone" placeholder="Телефон">&ndash;&gt;-->
+            <!--</div>-->
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <input type="submit" class="btn btn-primary" value="Отправить"></input>
+        </div>
+
           </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-primary">Отправить</button>
-        </div>
+
       </div>
     </div>
   </div>
@@ -229,7 +233,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service-box">
-                        <img src="images/3.png" class="pull-center" width=30%
+                        <img src="{% static "images/3.png" %}" / class="pull-center" width=30%
                              alt=""/>
                         <div>
                             <h4>Монтаж</h4>
@@ -241,7 +245,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service-box">
-                        <img src="images/4.png" class="pull-center" width=30%
+                        <img src="{% static "images/4.png" %}" /  class="pull-center" width=30%
                              alt=""/>
                         <div>
                             <h4>Ремонт</h4>
@@ -253,7 +257,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service-box">
-                        <img src="images/5.png" class="pull-center" width=30%
+                        <img src="{% static "images/5.png" %}" /  class="pull-center" width=30%
                              alt=""/>
                         <div>
                             <h4>Демонтаж</h4>
@@ -440,7 +444,7 @@
                             <div class="quote3">
                                 <div>
                                     <i class="img1"><img
-                                            src="images/quote/1.jpg"
+                                            src="{% static "images/quote/1.jpg" %}" /
                                             alt="quote"></i>
                                     <p>"Far far away, behind the word
                                         mountains, far from the countries
@@ -452,7 +456,7 @@
                                 </div>
                                 <div>
                                     <i class="img1"><img
-                                            src="images/quote/2.jpg"
+                                            src="{% static "images/quote/2.jpg" %}" /
                                             alt="quote"></i>
                                     <p>"Far far away, behind the word
                                         mountains, far from the countries
@@ -464,7 +468,7 @@
                                 </div>
                                 <div>
                                     <i class="img1"><img
-                                            src="images/quote/3.jpg"
+                                            src="{% static "images/quote/3.jpg" %}" /
                                             alt="quote"></i>
                                     <p>"Far far away, behind the word
                                         mountains, far from the countries
@@ -476,7 +480,7 @@
                                 </div>
                                 <div>
                                     <i class="img1"><img
-                                            src="images/quote/4.jpg"
+                                            src=""{% static "images/quote/4.jpg" %}" /
                                             alt="quote"></i>
                                     <p>"Far far away, behind the word
                                         mountains, far from the countries
