@@ -101,8 +101,6 @@
                     </div>
                   </div>
                 </div>
-
-
     <div class="bd-example">
   <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -115,7 +113,7 @@
         </div>
         <div class="modal-body">
             <p>Оставьте заявку и мы с Вами свяжемся в ближайшее время.</p>
-          <form method="POST" novalidate>
+          <form method="POST" action="create/" novalidate>
                 {% csrf_token %}
               {{ form|as_bootstrap }}
             <!--<div class="form-group">-->

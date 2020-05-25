@@ -2,6 +2,7 @@
 <html lang="en">
 
 {% load staticfiles %}
+{% load bootstrap_tags %}
 
 <head>
 
@@ -49,7 +50,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand brand"><img
-                            src="images/logo.png"></a>
+                            src="{% static "images/logo.png" %}" /></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -89,111 +90,132 @@
         </nav>
     </header>
 
+	 <div class="bd-example">
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class="modal-title text-center" id="exampleModalLabel">Оставить отзыв</h2>
+        </div>
+        <div class="modal-body">
+            <p>Пожалуйста, оставьте отзыв о нашей работе!</p>
+          <form method="POST" action="create/" novalidate>
+                {% csrf_token %}
+              {{ form|as_bootstrap }}
+            <!--<div class="form-group">-->
+                <!--<table>-->
+                    <!--</table>-->
+              <!--&lt;!&ndash;<input type="text" class="form-control" id="phone" placeholder="Телефон">&ndash;&gt;-->
+            <!--</div>-->
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <input type="submit" class="btn btn-primary" value="Отправить"></input>
+        </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- INFO CONTENT -->
         <div class="space100 other-menu">
         </div>
     <!-- INTRO -->
-
-        <div class="intro intro-benifits">
-
-        <div class="row center-content">
-            <div class="container">
-                <div class = "space30"></div>
-
-                <div class="col-md-10 benifits col-md-push-1">
-                    <h3>Наши цены</h3> <br/>
-                    <p>Окончательная стоимость производства и установки натяжного полотна
-                        зависит от объема работ. Важно знать, насколько большая
-                        ремонтируемая комната, какие были выбраны дизайн и освещение,
-                        а также учесть все особенности помещения. Ниже представлена
-                        стоимость основных работ мастера при монтаже натяжного потолка.
-                        Цены на источники освещения и гардины в таблице не указаны. </p>
-                    <br/>
-                    <div class="space30"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ELEMENTS - ACCORDION -->
-	<div class="elements-content">
+    <!-- BLOG -->
+	<div class="blog-content blog-single">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="section-head text-center space30">
-						<h3>По типу материала</h3>
-					</div>
-					<div class="clearfix"></div>
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									ПВХ (плёночные)
-									</a>
-								</h4>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								<div class="panel-body">
-									Если говорить о доступной, качественной и долговечной отделке,
-                                    то натяжной потолок – это одно из лучших решений. Среди этой
-                                    группы материалов около 90% рынка декора занимают
-                                    поливинилхлоридные полотна. Это и не удивительно, учитывая,
-                                    что натяжные потолки ПВХ предоставляют возможность всего за
-                                    несколько часов работы получить идеально ровную, красивую и
-                                    не нуждающуюся в уходе поверхность.
-                                    При минимуме недостатков у них большое количество достоинств,
-                                    что и предопределяет спрос. Кроме того, огромное преимущество – это цена,
-                                    доступная для любого человека.
-                                    К основным достоинствам натяжных потолков ПВХ следует отнести:
-                                    <p>
-                                    <ol>
-                                        <li>Эстетичность;</li>
-                                        <li>Прочность;</li>
-                                        <li>Долговечность;</li>
-                                        <li>Пожаробезопасность;</li>
-                                        <li>Влагостойкость;</li>
-                                        <li>Экологичность;</li>
-                                        <li>Вариативность.</li>
-                                    </ol>
-                                    </p>
+				<div class="col-md-9">
+					<article>
+						<h2 class="post-title">Отзывы</h2>
+					</article>
 
-								</div>
+					<div class="comments">
+						<!-- Comment -->
+						<div class="media v-align-children">
+							<a class="pull-left" href="#">
+							<img class="media-object" src="images/quote/1.jpg" alt="">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Simmy Abroad
+									<small>- 29.01.2018</small>
+								</h4>
+								Установку проведели быстро, без нареканий! Рабочие отработали слажено, нареканий нет! Определённо буду советовать знакомым!
 							</div>
 						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingTwo">
-								<h4 class="panel-title">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Тканевые
-									</a>
+						<!-- Comment -->
+						<div class="media v-align-children">
+							<a class="pull-left" href="#">
+							<img class="media-object" src="images/quote/2.jpg" alt="">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Олег Войченко
+									<small>- 21.01.2020</small>
 								</h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								<div class="panel-body">
-                                    Главная особенность данного типа материалов – в его основе лежит не поливинилхлоридная пленка, а полиэстер, обработанный полиуретаном. Благодаря этому он многократно прочнее по сравнению с ПВХ-аналогами. Ширина ткани может составлять до пяти метров, что позволяет обойтись без шовных соединений даже в достаточно больших по площади комнатах.
-Основные достоинства тканевых потолков:
-                                    <ol>
-                                        <li>Устойчивы к повреждениям и разрывам;</li>
-                                        <li>Экологически безопасны;</li>
-                                        <li>Улучшают звукоизоляцию;</li>
-                                        <li>Не выгорают и не желтеют.</li>
-                                    </ol>
-В то время как к недостаткам относятся влагонепроницаемость и невозможность повторного монтажа.
-                                </div>
+								Большое спасибо за работу! Прошло больше трёх лет после ремонта, а покрытие как новенькое!
 							</div>
 						</div>
+						<div class="media v-align-children">
+							<a class="pull-left" href="#">
+							<img class="media-object" src="images/quote/1.jpg" alt="">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Самуил Лермоньев
+									<small>- 29.01.2018</small>
+								</h4>
+								Установку проведели быстро, без нареканий! Рабочие отработали слажено, нареканий нет! Определённо буду советовать знакомым!
+							</div>
+						</div>
+						<!-- Comment -->
+						<div class="media v-align-children">
+							<a class="pull-left" href="#">
+							<img class="media-object" src="images/quote/2.jpg" alt="">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Ирина Акваева
+									<small>- 21.01.2020</small>
+								</h4>
+								Большое спасибо за работу! Прошло больше трёх лет после ремонта, а покрытие как новенькое!
+							</div>
+						</div>
+						<div class="media v-align-children">
+							<a class="pull-left" href="#">
+							<img class="media-object" src="images/quote/1.jpg" alt="">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Лариса Амуньшина
+									<small>- 29.01.2018</small>
+								</h4>
+								Установку проведели быстро, без нареканий! Рабочие отработали слажено, нареканий нет! Определённо буду советовать знакомым!
+							</div>
+						</div>
+						<!-- Comment -->
+						<div class="media v-align-children">
+							<a class="pull-left" href="#">
+							<img class="media-object" src="images/quote/2.jpg" alt="">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Денис Дом
+									<small>- 21.01.2020</small>
+								</h4>
+								Большое спасибо за работу! Прошло больше трёх лет после ремонта, а покрытие как новенькое!
+							</div>
+						</div>
+					</div>
+				</div>
 
-                        <div class="section-head text-center space30">
-						<h3>По фактуре полотна</h3>
-					</div>
-                        <div class = 'space20'> </div>
-					</div>
+				<div class="col-md-3 sidebar">
+					<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#orderModal">Рассчитать
+                        стоимость</button>
 				</div>
 			</div>
 		</div>
-	</div>
 
         <!-- FOOTER -->
         <footer class="footer2" id="footer2">
@@ -201,7 +223,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <a href="index-2.html" class="footer-logo"><img
-                                src="images/dark_logo.png"></a>
+                                src="{% static "images/dark_logo.png" %}" /></a>
                         <div class="space20"></div>
                     </div>
 
@@ -228,6 +250,7 @@
             </div>
         </div>
     </div>
+	</div>
 
 
 <!-- JAVASCRIPT =============================-->
@@ -248,5 +271,3 @@
 </body>
 
 </html>
-
-

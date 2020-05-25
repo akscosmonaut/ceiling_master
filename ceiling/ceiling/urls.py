@@ -5,6 +5,7 @@ from dipapp import views
 urlpatterns = [
     path('index', views.index),
     path('', views.index),
+    path('create/', views.create),
     path('ceiling_kind', views.ceiling_kind),
     path('gallery', views.gallery),
     path('review', views.review),
