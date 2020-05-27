@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .forms import UserForm, ReviewForm
-from .models import Order
+from .models import Order, Review
 
 
 def index(request):
-    userform = UserForm(auto_id=False)
+    userform = UserForm()
     order = Order.objects.all()
     return render(request, "index.html", {"form": userform})
 
@@ -21,7 +21,6 @@ def create(request):
     else:
         userform = UserForm()
         return render(request, "index.html", {"form": userform})
-
 
 
 def ceiling_kind(request):
@@ -41,7 +40,22 @@ def price(request):
 
 
 def review(request):
-    reviewform = ReviewForm(auto_id=False)
-    order = Order.objects.all()
-    return render(request, "review.html", {"form": reviewform})
+    reviewform = ReviewForm()
+    review = Review.objects.all().order_by('-created_at')
+    print(review)
+    return render(request, "review.html", {"form": reviewform, "review": review})
+
+
+def create_review(request):
+    if request.method == "POST":
+        review = Review()
+        review.name = request.POST.get("name")
+        review.surname = request.POST.get("surname")
+        review.text = request.POST.get("text")
+        review.image = request.POST.get("image")
+        review.save()
+        return HttpResponseRedirect("/review")
+    else:
+        reviewform = ReviewForm()
+        return render(request, "review.html", {"form": reviewform})
 

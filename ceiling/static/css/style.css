@@ -3614,7 +3614,7 @@ blockquote.pull-right {
 .media-object {
 	display: block;
 	border-radius: 50%;
-	max-width: 80px;
+	max-width: 60px;
 }
 
 .media-heading {

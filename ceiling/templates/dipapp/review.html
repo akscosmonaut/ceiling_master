@@ -2,6 +2,7 @@
 <html lang="en">
 
 {% load staticfiles %}
+{% load tz %}
 {% load bootstrap_tags %}
 
 <head>
@@ -102,7 +103,7 @@
         </div>
         <div class="modal-body">
             <p>Пожалуйста, оставьте отзыв о нашей работе!</p>
-          <form method="POST" action="create/" novalidate>
+          <form method="POST" action="create_review/" novalidate>
                 {% csrf_token %}
               {{ form|as_bootstrap }}
             <!--<div class="form-group">-->
@@ -138,81 +139,31 @@
 
 					<div class="comments">
 						<!-- Comment -->
+                        {% if review.count > 0 %}
+                        {% for rev in review %}
 						<div class="media v-align-children">
-							<a class="pull-left" href="#">
-							<img class="media-object" src="images/quote/1.jpg" alt="">
+							<a class="pull-left">
+							<img class="media-object" src="{% static rev.image %}" alt="">
 							</a>
 							<div class="media-body">
-								<h4 class="media-heading">Simmy Abroad
-									<small>- 29.01.2018</small>
+								<h4 class="media-heading">{{ rev.name }} {{ rev.surname }}
+									<small>- {{ rev.created_at|localtime|date:"d.m.Y H:i" }}</small>
 								</h4>
-								Установку проведели быстро, без нареканий! Рабочие отработали слажено, нареканий нет! Определённо буду советовать знакомым!
+								{{ rev.text }}
 							</div>
 						</div>
-						<!-- Comment -->
-						<div class="media v-align-children">
-							<a class="pull-left" href="#">
-							<img class="media-object" src="images/quote/2.jpg" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">Олег Войченко
-									<small>- 21.01.2020</small>
-								</h4>
-								Большое спасибо за работу! Прошло больше трёх лет после ремонта, а покрытие как новенькое!
-							</div>
-						</div>
-						<div class="media v-align-children">
-							<a class="pull-left" href="#">
-							<img class="media-object" src="images/quote/1.jpg" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">Самуил Лермоньев
-									<small>- 29.01.2018</small>
-								</h4>
-								Установку проведели быстро, без нареканий! Рабочие отработали слажено, нареканий нет! Определённо буду советовать знакомым!
-							</div>
-						</div>
-						<!-- Comment -->
-						<div class="media v-align-children">
-							<a class="pull-left" href="#">
-							<img class="media-object" src="images/quote/2.jpg" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">Ирина Акваева
-									<small>- 21.01.2020</small>
-								</h4>
-								Большое спасибо за работу! Прошло больше трёх лет после ремонта, а покрытие как новенькое!
-							</div>
-						</div>
-						<div class="media v-align-children">
-							<a class="pull-left" href="#">
-							<img class="media-object" src="images/quote/1.jpg" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">Лариса Амуньшина
-									<small>- 29.01.2018</small>
-								</h4>
-								Установку проведели быстро, без нареканий! Рабочие отработали слажено, нареканий нет! Определённо буду советовать знакомым!
-							</div>
-						</div>
-						<!-- Comment -->
-						<div class="media v-align-children">
-							<a class="pull-left" href="#">
-							<img class="media-object" src="images/quote/2.jpg" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">Денис Дом
-									<small>- 21.01.2020</small>
-								</h4>
-								Большое спасибо за работу! Прошло больше трёх лет после ремонта, а покрытие как новенькое!
-							</div>
-						</div>
+                        {% endfor %}
+                        {% else %}
+                        <h4>Пока нет ни одного отзыва.</h4>
+                        <div class = "space30"></div>
+
+                        {% endif %}
 					</div>
 				</div>
 
 				<div class="col-md-3 sidebar">
-					<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#orderModal">Рассчитать
-                        стоимость</button>
+					<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#orderModal">Оставить отзыв
+                    </button>
 				</div>
 			</div>
 		</div>
