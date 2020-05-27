@@ -177,6 +177,18 @@ ul, ol, li {
 
 /* 2. COMMON STYLES */
 
+
+.avatar{
+    margin: 10px;
+    padding: 0;
+    position: relative;
+    width:64px;
+    height:64px;
+    background: #c2c2c2;
+    border: 1px solid #000;
+    border-radius:3px;
+}
+
 .video {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -4107,6 +4119,7 @@ footer .list-inline li {
 
 .testimonials-white {
 	background-color: #f2f2f2;
+	padding: 30px 0 30px 0;
 }
 
 .testimonials-white .author {

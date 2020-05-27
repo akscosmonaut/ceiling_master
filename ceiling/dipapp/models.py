@@ -10,7 +10,7 @@ class Order(models.Model):
 class Review(models.Model):
     name = models.CharField(max_length=20)
     surname = models.CharField(max_length=20)
-    text = models.CharField(max_length=140)
+    text = models.CharField(max_length=100)
     date = models.DateField(default=datetime.now(), blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     image = models.FilePathField(max_length=20)

@@ -11,31 +11,31 @@ class UserForm(forms.Form):
 
 choices = (
         ('images/icons/1.png', mark_safe(_(
-            '<img src="../static/images/icons/1.png" '
+            '<img src="../static/images/icons/little/1.png" '
             'title="approve">',
             ))),
         ('images/icons/2.png', mark_safe(_(
-            '<img src="../static/images/icons/2.png" '
+            '<img src="../static/images/icons/little/2.png" '
             'title="approve">',
             ))),
         ('images/icons/3.png', mark_safe(_(
-            '<img src="../static/images/icons/3.png" '
+            '<img src="../static/images/icons/little/3.png" '
             'title="approve">',
             ))),
         ('images/icons/4.png', mark_safe(_(
-            '<img src="../static/images/icons/4.png" '
+            '<img src="../static/images/icons/little/4.png" '
             'title="approve">',
             ))),
         ('images/icons/5.png', mark_safe(_(
-            '<img src="../static/images/icons/5.png" '
+            '<img src="../static/images/icons/little/5.png" '
             'title="approve">',
             ))),
         ('images/icons/6.png', mark_safe(_(
-            '<img src="../static/images/icons/6.png" '
+            '<img src="../static/images/icons/little/6.png" '
             'title="approve">',
             ))),
         ('images/icons/7.png', mark_safe(_(
-            '<img src="../static/images/icons/7.png" '
+            '<img src="../static/images/icons/little/7.png" '
             'title="approve">',
             ))),
     )
@@ -44,6 +44,6 @@ choices = (
 class ReviewForm(forms.Form):
     name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Имя'}), label='')
     surname = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Фамилия'}), label='')
-    text = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Текст'}), label='')
+    text = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Текст', 'rows':4}), label='')
     image = forms.ChoiceField(choices=choices, widget=forms.RadioSelect, label='')
     # phone = forms.CharField(widget=forms.Input(attrs={'placeholder': 'Телефон'}), required=True, label='')

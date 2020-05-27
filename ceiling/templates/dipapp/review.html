@@ -71,7 +71,7 @@
                             <a href="index">Главная</a>
                         </li>
                         <li class="dropdown">
-                            <a href="ceiling-kind">Виды потолков</a>
+                            <a href="ceiling_kind">Виды потолков</a>
                         </li>
                         <li class="dropdown mm-menu">
                             <a href="price">Цены</a>
@@ -105,12 +105,29 @@
             <p>Пожалуйста, оставьте отзыв о нашей работе!</p>
           <form method="POST" action="create_review/" novalidate>
                 {% csrf_token %}
-              {{ form|as_bootstrap }}
+              <!--{{ form|as_bootstrap }}-->
             <!--<div class="form-group">-->
                 <!--<table>-->
                     <!--</table>-->
               <!--&lt;!&ndash;<input type="text" class="form-control" id="phone" placeholder="Телефон">&ndash;&gt;-->
             <!--</div>-->
+              {{ form.name }}
+              <div class="space10"> </div>
+              {{ form.surname }}
+              <div class="space10"> </div>
+              {{ form.text }}
+              <p>Выберите аватар:</p>
+
+              <table><tr>
+                  {% for radio in form.image %}
+                  <td>
+                  {{ radio.tag }}
+                  {{ radio.choice_label }}
+                  </td>
+                  {% endfor %}
+              </tr></table>
+
+              </tr>
               <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
           <input type="submit" class="btn btn-primary" value="Отправить"></input>

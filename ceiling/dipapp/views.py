@@ -7,8 +7,9 @@ from .models import Order, Review
 
 def index(request):
     userform = UserForm()
+    review = Review.objects.all().order_by('-created_at')
     order = Order.objects.all()
-    return render(request, "index.html", {"form": userform})
+    return render(request, "index.html", {"form": userform, "review": review})
 
 
 def create(request):

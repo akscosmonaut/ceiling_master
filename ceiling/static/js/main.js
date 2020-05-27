@@ -232,3 +232,7 @@ $(document).ready(function() {
 $(function () {
 $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });
+
+$('#MyModal').on('hidden.bs.modal', function () {
+    $(this).find('form').trigger('reset');
+})
