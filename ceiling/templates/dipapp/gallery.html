@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand brand"><img
-                            src="images/logo.png"></a>
+                            src="{% static "images/logo.png" %}" /></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -89,98 +89,100 @@
         </nav>
     </header>
 
+          <div class="space100 other-menu">
+        </div>
+
+    <div class="complete-works">
+             <div class="text-center">
+                    <div class="container">
+                        <h3>Готовые работы</h3>
+                    </div>
+                </div>
+
+        </div>
+
+
+<!-- ELEMENTS - GALLERY -->
+	<div class="elements-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/1.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/1.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+
+					<div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/2.jpg" %}" /  class="swipebox-video">
+							<img src="{% static "images/mainceiling/2.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+
+                    <div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/3.jpg" %}" /  class="swipebox-video">
+							<img src="{% static "images/mainceiling/3.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/4.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/4.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+
+					<div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/5.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/5.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+
+                    <div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/6.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/6.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+				</div>
+
+                <div class="col-md-4">
+					<div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/7.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/7.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+
+					<div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/8.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/8.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+
+                    <div class="gallery-item space30">
+						<a href="{% static "images/mainceiling/9.jpg" %}" / class="swipebox-video">
+							<img src="{% static "images/mainceiling/9.jpg" %}" / class="img-responsive" alt=""/>
+							<i class="icon2-plus-circle"></i>
+						</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
     <!-- INFO CONTENT -->
         <div class="space100 other-menu">
         </div>
-    <!-- INTRO -->
-
-        <div class="intro intro-benifits">
-
-        <div class="row center-content">
-            <div class="container">
-                <div class = "space30"></div>
-
-                <div class="col-md-10 benifits col-md-push-1">
-                    <h3>Наши цены</h3> <br/>
-                    <p>Окончательная стоимость производства и установки натяжного полотна
-                        зависит от объема работ. Важно знать, насколько большая
-                        ремонтируемая комната, какие были выбраны дизайн и освещение,
-                        а также учесть все особенности помещения. Ниже представлена
-                        стоимость основных работ мастера при монтаже натяжного потолка.
-                        Цены на источники освещения и гардины в таблице не указаны. </p>
-                    <br/>
-                    <div class="space30"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<div class="row">
-  <div class="col-md-12">
-
-    <div id="mdb-lightbox-ui"></div>
-
-    <div class="mdb-lightbox">
-
-      <figure class="col-md-4">
-        <a href="images/mainceiling/1.jpg" data-size="736x501">
-          <img alt="picture" src="images/mainceiling/1.jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" class="img-fluid" />
-        </a>
-      </figure>
-
-    </div>
-
-  </div>
-</div>
-
 
         <!-- FOOTER -->
         <footer class="footer2" id="footer2">

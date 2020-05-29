@@ -49,9 +49,8 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand brand"><img
-                            src="images/logo.png"></a>
+                            src="{% static "images/logo.png" %}" class="img-fluid"/></a>
                 </div>
-
                 <button type="button" class="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"
@@ -89,119 +88,112 @@
         </nav>
     </header>
 
-    <!-- INFO CONTENT -->
-        <div class="space100 other-menu">
-        </div>
-    <!-- INTRO -->
-
-        <div class="intro intro-benifits">
-
-        <div class="row center-content">
-            <div class="container">
-                <div class = "space30"></div>
-
-                <div class="col-md-10 benifits col-md-push-1">
-                    <h3>Наши цены</h3> <br/>
-                    <p>Окончательная стоимость производства и установки натяжного полотна
-                        зависит от объема работ. Важно знать, насколько большая
-                        ремонтируемая комната, какие были выбраны дизайн и освещение,
-                        а также учесть все особенности помещения. Ниже представлена
-                        стоимость основных работ мастера при монтаже натяжного потолка.
-                        Цены на источники освещения и гардины в таблице не указаны. </p>
-                    <br/>
-                    <div class="space30"></div>
+<div class="intro intro8">
+    <div class="advice-intro">
+        <div class="container">
+            <div class="row center-content">
+                <div class="col-md-8">
+                    <h3>Cоветы мастера</h3>
+                    <div class="text-justify">
+                    <h4>Натяжные потолки выгодно выделяются на фоне обычных способов отделки потолочной площади,
+                        а всё благодаря ряду преимуществ. Плёнки сохраняют привлекательный вид в течение
+                        длительного времени, не выгорают на солнце и не деформируются. Установка натяжного
+                        потолка позволяет легко скрывать дефекты перекрытия, маскировать электропроводку и
+                        другие коммуникации. Ещё один плюс – полотно надёжно защищает комнату при затоплении
+                        сверху, ведь вся вода скапливается в одном месте и легко устраняется через небольшое
+                        отверстие. К тому же натяжные системы не скрадывают высоту помещения, как подвесные
+                        конструкции. Чтобы оформление потолочного перекрытия смотрелось максимально привлекательно,
+                        необходимо знать, как выбрать натяжной потолок.</h4>
+                    </div>
                 </div>
+
+                <div class="col-md-6">
+                    <img src="{% static "images/advice/1.jpg" %}" / class="img-fluid img-responsive" alt=""/>
+                </div>
+
+<!-- Модальное окно -->
+
             </div>
+        </div>
         </div>
     </div>
 
-
-    <!-- ELEMENTS - ACCORDION -->
-	<div class="elements-content">
+    <div class="elements-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="section-head text-center space30">
-						<h3>По типу материала</h3>
-					</div>
-					<div class="clearfix"></div>
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									ПВХ (плёночные)
-									</a>
-								</h4>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								<div class="panel-body">
-									Если говорить о доступной, качественной и долговечной отделке,
-                                    то натяжной потолок – это одно из лучших решений. Среди этой
-                                    группы материалов около 90% рынка декора занимают
-                                    поливинилхлоридные полотна. Это и не удивительно, учитывая,
-                                    что натяжные потолки ПВХ предоставляют возможность всего за
-                                    несколько часов работы получить идеально ровную, красивую и
-                                    не нуждающуюся в уходе поверхность.
-                                    При минимуме недостатков у них большое количество достоинств,
-                                    что и предопределяет спрос. Кроме того, огромное преимущество – это цена,
-                                    доступная для любого человека.
-                                    К основным достоинствам натяжных потолков ПВХ следует отнести:
-                                    <p>
-                                    <ol>
-                                        <li>Эстетичность;</li>
-                                        <li>Прочность;</li>
-                                        <li>Долговечность;</li>
-                                        <li>Пожаробезопасность;</li>
-                                        <li>Влагостойкость;</li>
-                                        <li>Экологичность;</li>
-                                        <li>Вариативность.</li>
-                                    </ol>
-                                    </p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-uppercase space20">Выбор натяжного потолка</h4>
+                            <div class="text-justify">
+							<p>В зависимости от материала изготовления и типа поверхности, натяжные потолки
+                                бывают трёх видов: глянцевые, матовые, тканевые. С подробным описанием вы можете
+                                ознакомиться на странице виды потолков.</p>
+                            <p>Исходя из типа применяемого полотна,
+                                при монтаже могут использоваться различные расходные материалы: потолочные и
+                                разделительные профили, багеты для криволинейных участков, маскирующие ПВХ ленты,
+                                платформы под встраиваемые светильники и многое другое. Также стоит учитывать,
+                                какой лучше натяжной потолок подходит для конкретного помещения: для кухни больше
+                                всего подойдут матовые полотна нейтральных оттенков из ПВХ плёнки, которые можно
+                                легко очищать от жировых пятен, в то время, как для детской комнаты можно
+                                присмотреть яркие полотна с различными аппликациями и рисунками.</p>
+                            <p>При выборе натяжного потолка крайне важно определиться с тем, какие потолочные светильники
+                                подойдут для конкретной комнаты. Купить подвесные светильники можно в том случае, если
+                                высота стен больше 2.5 метров, иначе люстра будет визуально делать помещение низким, а свет
+                                будет неравномерно распределяться по отдельным зонам. Очень популярными считаются встраиваемые
+                                светильники, которые будто сливаются с потолком. Такие осветительные устройства подходят для
+                                любых помещений, главное правильно подобрать места расположения, размеры и форму источников света.</p>
+                            </div>
+                                <div class="blog-content blog-full-3col">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+						<img src="{% static "images/advice/2.jpg" %}" class="img-responsive post-thumb" alt=""/>
+                        <div class="center-block center-align">
+						Подвесная люстра
+                        </div>
+				</div>
 
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingTwo">
-								<h4 class="panel-title">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Тканевые
-									</a>
-								</h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								<div class="panel-body">
-                                    Главная особенность данного типа материалов – в его основе лежит не поливинилхлоридная пленка, а полиэстер, обработанный полиуретаном. Благодаря этому он многократно прочнее по сравнению с ПВХ-аналогами. Ширина ткани может составлять до пяти метров, что позволяет обойтись без шовных соединений даже в достаточно больших по площади комнатах.
-Основные достоинства тканевых потолков:
-                                    <ol>
-                                        <li>Устойчивы к повреждениям и разрывам;</li>
-                                        <li>Экологически безопасны;</li>
-                                        <li>Улучшают звукоизоляцию;</li>
-                                        <li>Не выгорают и не желтеют.</li>
-                                    </ol>
-В то время как к недостаткам относятся влагонепроницаемость и невозможность повторного монтажа.
-                                </div>
-							</div>
-						</div>
+				<div class="col-md-4">
+                    <img src="{% static "images/advice/3.jpg" %}" class="img-responsive post-thumb" alt=""/>
+                        <div class="center-block center-align">
+                        Точечные светильники
+                        </div>
+				</div>
 
-                        <div class="section-head text-center space30">
-						<h3>По фактуре полотна</h3>
-					</div>
-                        <div class = 'space20'> </div>
+				<div class="col-md-4">
+						<img src="{% static "images/advice/4.jpg" %}" class="img-responsive post-thumb" alt=""/>
+                        <div class="center-block center-align">
+						Карниз для штор
+                        </div>
+				</div>
+			</div>
+
+				</div>
+			</div>
+                        </div>
+                        <div class="text-justify">
+                            <p>Прежде чем осуществлять монтаж натяжного потолка, важно продумать и тип гардин. Настенные
+                                карнизы являются классическим вариантом, который подходит для любых типов конструкций.
+                                Установка изделий очень проста – они крепятся к стене дюбелями или саморезами. Данный вид
+                                карнизов отличается долговечностью и удобством эксплуатации. Отдельного внимания заслуживают
+                                скрытые потолочные гардины, которые экономят пространство и подходят даже для помещений с
+                                невысокими стенами.</p>
+                        </div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
+	<div class="clearfix"></div>
         <!-- FOOTER -->
         <footer class="footer2" id="footer2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
                         <a href="index-2.html" class="footer-logo"><img
-                                src="images/dark_logo.png"></a>
+                                src="{% static "images/logo.png" %}" /></a>
                         <div class="space20"></div>
                     </div>
 

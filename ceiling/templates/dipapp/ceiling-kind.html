@@ -42,14 +42,14 @@
 </head>
 <body id="page-top">
 
-<div class="body">
+<div class="body-bg">
     <!-- HEADER -->
     <header>
         <nav class="navbar-inverse navbar-lg navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand brand"><img
-                            src="images/logo.png"></a>
+                    <a href="index" class="navbar-brand brand"><img
+                            src="{% static "images/logo.png" %}" /></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -66,10 +66,10 @@
                      id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown mm-menu">
-                            <a href="index.html">Главная</a>
+                            <a href="index">Главная</a>
                         </li>
                         <li class="dropdown">
-                            <a href="ceiling-kind">Виды потолков</a>
+                            <a href="ceiling_kind">Виды потолков</a>
                         </li>
                         <li class="dropdown mm-menu">
                             <a href="price">Цены</a>
@@ -94,26 +94,17 @@
         </div>
     <!-- INTRO -->
 
-        <div class="intro intro-benifits">
-
-        <div class="row center-content">
-            <div class="container">
-                <div class = "space30"></div>
-
-                <div class="col-md-10 benifits col-md-push-1">
-                    <h3>Наши цены</h3> <br/>
-                    <p>Окончательная стоимость производства и установки натяжного полотна
-                        зависит от объема работ. Важно знать, насколько большая
-                        ремонтируемая комната, какие были выбраны дизайн и освещение,
-                        а также учесть все особенности помещения. Ниже представлена
-                        стоимость основных работ мастера при монтаже натяжного потолка.
-                        Цены на источники освещения и гардины в таблице не указаны. </p>
-                    <br/>
-                    <div class="space30"></div>
+            <div class="complete-works">
+             <div class="text-center">
+                    <div class="container">
+                        <h3>Готовые работы</h3>
+                    </div>
                 </div>
-            </div>
+
         </div>
-    </div>
+
+
+
 
 
     <!-- ELEMENTS - ACCORDION -->
@@ -136,7 +127,8 @@
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 								<div class="panel-body">
-									Если говорить о доступной, качественной и долговечной отделке,
+                                    <div class="text-justify">
+									<p>Если говорить о доступной, качественной и долговечной отделке,
                                     то натяжной потолок – это одно из лучших решений. Среди этой
                                     группы материалов около 90% рынка декора занимают
                                     поливинилхлоридные полотна. Это и не удивительно, учитывая,
@@ -147,17 +139,18 @@
                                     что и предопределяет спрос. Кроме того, огромное преимущество – это цена,
                                     доступная для любого человека.
                                     К основным достоинствам натяжных потолков ПВХ следует отнести:
-                                    <p>
-                                    <ol>
-                                        <li>Эстетичность;</li>
-                                        <li>Прочность;</li>
-                                        <li>Долговечность;</li>
-                                        <li>Пожаробезопасность;</li>
-                                        <li>Влагостойкость;</li>
-                                        <li>Экологичность;</li>
-                                        <li>Вариативность.</li>
-                                    </ol>
                                     </p>
+                                    </div>
+                                    <ol>
+                                        <li><p>Эстетичность;<p></li>
+                                        <li><p>Прочность;</p></li>
+                                        <li><p>Долговечность;</p></li>
+                                        <li><p>Пожаробезопасность;</p></li>
+                                        <li><p>Влагостойкость;</p></li>
+                                        <li><p>Экологичность;</p></li>
+                                        <li><p>Вариативность.</p></li>
+                                    </ol>
+
 
 								</div>
 							</div>
@@ -172,24 +165,110 @@
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel-body">
-                                    Главная особенность данного типа материалов – в его основе лежит не поливинилхлоридная пленка, а полиэстер, обработанный полиуретаном. Благодаря этому он многократно прочнее по сравнению с ПВХ-аналогами. Ширина ткани может составлять до пяти метров, что позволяет обойтись без шовных соединений даже в достаточно больших по площади комнатах.
+                                    <div class="text-justify">
+                                    <p>Главная особенность данного типа материалов – в его основе лежит не поливинилхлоридная пленка, а полиэстер, обработанный полиуретаном. Благодаря этому он многократно прочнее по сравнению с ПВХ-аналогами. Ширина ткани может составлять до пяти метров, что позволяет обойтись без шовных соединений даже в достаточно больших по площади комнатах.
 Основные достоинства тканевых потолков:
                                     <ol>
-                                        <li>Устойчивы к повреждениям и разрывам;</li>
-                                        <li>Экологически безопасны;</li>
-                                        <li>Улучшают звукоизоляцию;</li>
-                                        <li>Не выгорают и не желтеют.</li>
+                                        <li><p>Устойчивы к повреждениям и разрывам;</p></li>
+                                        <li><p>Экологически безопасны;</p></li>
+                                        <li><p>Улучшают звукоизоляцию;</p></li>
+                                        <li><p>Не выгорают и не желтеют.</p></li>
                                     </ol>
-В то время как к недостаткам относятся влагонепроницаемость и невозможность повторного монтажа.
+                                        <p>В то время как к недостаткам относятся влагонепроницаемость и невозможность повторного монтажа.</p>
+                                    </div>
                                 </div>
 							</div>
 						</div>
+                        </div>
 
                         <div class="section-head text-center space30">
 						<h3>По фактуре полотна</h3>
 					</div>
                         <div class = 'space20'> </div>
-					</div>
+                    <div class="clearfix"></div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									Глянцевые
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+                                    <div class="text-justify">
+									<p>В последнее время глянцевые натяжные потолки пользуются особой популярностью. Они дорого и современно смотрятся, визуально расширяя всё пространство. Такой потолок чаще всего устанавливают на кухне или ванной, а также в гостиной и спальне.
+Достоинства глянцевых натяжных потолков:
+                                    </p>
+                                    <ol>
+                                        <li>Эффектный внешний вид независимо от выбранной расцветки;</li>
+                                        <li>Влагостойкость;</li>
+                                        <li>Антистатичность;</li>
+                                        <li>Отражение света;</li>
+                                        <li>Универсальность;</li>
+                                        <li>Нетребовательность к уходу.</li>
+                                    </ol>
+                                    Кроме того, такие потолки монтируются всего за несколько часов с минимумом пыли и грязи, а также отлично скрывают любые дефекты потолочного пространства и эффективно маскируют коммуникации.
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Сатиновые
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+                                    <div class="text-justify">
+                                    <p>Сатиновые натяжные потолки предназначены для тех, кто считает глянцевые потолки слишком яркими, а матовые – слишком тусклыми. Они отлично впишутся в любую комнату и сделают её уютной и элегантной.
+Плюсы сатиновых натяжных потолков примерно такие же, как и у других типов полотен, но есть и отличия.
+В первую очередь здесь следует отметить:
+                                    </p>
+                                    </div>
+                                    <ol>
+                                        <li>Разнообразие доступных цветов и оттенков;</li>
+                                        <li>Наиболее качественная фотопечать;</li>
+                                        <li>Высокая скорость монтажа;</li>
+                                        <li>Простота и долговечность эксплуатации.</li>
+                                    </ol>
+
+                                </div>
+							</div>
+						</div>
+
+                        <div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFive">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Матовые
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body">
+                                    <div class="text-justify">
+                                    <p>Данный вид отделки в последнее время стал не просто весьма распространенным, а классическим. Он может иметь как традиционный дизайн, близкий по внешнему виду к побелке/покраске, так и представлять собой что-то яркое, оригинальное, интересное – все зависит от выбранного вами полотна и типа декора.
+Помимо красоты следует отметить и следующие достоинства:
+                                    </div>
+                                    <p><ol>
+                                        <li>Антистатичность;</li>
+                                        <li>Долговечность;</li>
+                                        <li>Стойкость к воздействию влаги;</li>
+                                        <li>Не бликует и не выцветает;</li>
+                                        <li>Абсолютно безопасен для здоровья.</li>
+                                    </ol>
+                                    </p>
+                                </div>
+								</div>
+							</div>
+						</div>
+                        </div>
+
 				</div>
 			</div>
 		</div>
@@ -201,7 +280,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <a href="index-2.html" class="footer-logo"><img
-                                src="images/dark_logo.png"></a>
+                                src="{% static "images/logo.png" %}" /></a>
                         <div class="space20"></div>
                     </div>
 

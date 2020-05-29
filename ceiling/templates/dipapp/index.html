@@ -36,11 +36,33 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/slider/2016/cfb/jquery.carousel.fullscreen.css" />
+   <link rel="stylesheet" href="{% static "js/jquery.carousel.fullscreen.js" %}" />
+    <link rel="stylesheet" href="{% static "css/jquery.carousel.fullscreen.css" %}" />
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+
 </head>
+<div id = "toTop" > <img src="{% static "images/arrow.png" %}" / class="pull-center" width=70%
+                             alt=""/> </div>
 <body id="page-top">
 
 <div class="body">
@@ -50,7 +72,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="navbar-brand brand"><img
-                            src="{% static "images/logo.png" %}" /></a>
+                            src="{% static "images/logo.png" %}" class="img-fluid"/></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -90,14 +112,14 @@
         </nav>
     </header>
 
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-body">
                         <div class="uCalc_286606"></div>
                           <script> var widgetOptions286606 = { bg_color: "transparent" };
                           (function() { var a = document.createElement("script"), h = "head"; a.async = true;
-                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
+                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })(); a.contentWindow.document.close();</script>
                       </div>
                     </div>
                   </div>
@@ -139,14 +161,17 @@
         <div class="container">
             <div class="row center-content">
                 <div class="col-md-8">
+                    <div class="space20"></div>
                     <h3>Монтаж натяжных потолков любого уровня сложности</h3>
                     <p>Работаем без предоплаты.</p>
-                    <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Рассчитать
+                    <div class="col-md-6">
+                    <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#myModal">Рассчитать
                         стоимость</button>
+                    </div>
                 </div>
 
-                <div class="col-md-4">
-                    <img src="{% static "images/photo1.jpg" %}" / class="pull-left" alt=""/>
+                <div class="col-md-6">
+                    <img src="{% static "images/photo1.jpg" %}" / class="img-fluid img-responsive space30" alt=""/>
                 </div>
 
 <!-- Модальное окно -->
@@ -162,29 +187,25 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3">
                         <div class="stats2-info">
-                            <i class="icon-calendar4"></i>
-                            <p><span class="count">5</span></p>
+                            <p>5</p>
                             <h2>лет успешной работы</h2>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <div class="stats2-info">
-                            <i class="icon-profile-male"></i>
-                            <p><span class="count">1000</span></p>
+                            <p>1000</p>
                             <h2>клиентов</h2>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <div class="stats2-info">
-                            <i class="icon-square2"></i>
-                            <p><span class="count">100000</span></p>
+                            <p>100000</p>
                             <h2>кв.м установленного полотна</h2>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <div class="stats2-info">
-                            <i class="icon-tools"></i>
-                            <p><span class="count">2</span></p>
+                            <p>2</p>
                             <h2>года гарантии</h2>
                         </div>
                     </div>
@@ -192,23 +213,30 @@
             </div>
         </div>
     </div>
+
+
+
+
+
     <div class="intro intro-benifits">
 
         <div class="row center-content">
-            <div class="col-md-6">
-                <img src="{% static "images/bg/benifits.jpg" %}" / class="pull-left" width=70%
+            <div class="col-md-7">
+                <img src="{% static "images/bg/benifits.jpg" %}" class="img-fluid img-responsive space30"
                      alt=""/>
             </div>
 
             <div class="container">
                 <div class = "space30"></div>
-
-                <div class="col-md-10 benifits col-md-push-1">
+            <div class="row center-content">
+                <div class="col-md-9 benifits col-md-push-1">
                     <h3>Натяжные потолки - это наш профиль</h3> <br/>
+                    <div class="text-justify">
                     <p>Наша компания занимается проектированием, изготовлением
                         полотен и монтажом всей конструкции.
                         Опыт работы в данной сфере более 5 лет. Мы гарантируем
                         высокое качество и доступные цены!</p>
+                    </div>
                     <br/>
                     <p><span>=</span> Работа с различными видами потолков, в
                         любом помещении</p>
@@ -216,9 +244,14 @@
                     <p><span>=</span> Монтаж в городе и по области</p>
                     <p><span>=</span> Без посредников
                     <div class="space30"></div>
-                      <button type="button" class="space30 btn btn-lg btn-dark" data-toggle="modal" data-target="#orderModal">Оставить заявку</button>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="pull-right">
+                      <button type="button" class="space30 btn btn-lg btn-dark btn-block" data-toggle="modal" data-target="#orderModal">Оставить заявку</button>
+                    </div>                        </div>
                 </div>
             </div>
+                </div>
         </div>
     </div>
     <section class="services icon-box">
@@ -328,83 +361,99 @@
         </div>
 
 
-<!-- ELEMENTS - GALLERY -->
-	<div class="elements-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/1.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/1.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
+    <style>
+body-gallery{background: #dde7f6 }
 
-					<div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/2.jpg" %}" /  class="swipebox-video">
-							<img src="{% static "images/mainceiling/2.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
+.carousel {
+ margin-top: 20px;
+}
+.item .thumb {
+ width: 33.3%;
+ cursor: pointer;
+ float: left;
+}
+.item .thumb img {
+ width: 100%;
+ margin: 2px;
+}
+.item img {
+ width: 100%;
+}
 
-                    <div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/3.jpg" %}" /  class="swipebox-video">
-							<img src="{% static "images/mainceiling/3.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
-				</div>
+.vertical{
+display:inline;
+vertical-align: middle;
+}
+</style>
 
-				<div class="col-md-4">
-					<div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/4.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/4.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
+ <div class="container">
+ <div class="row">
 
-					<div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/5.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/5.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
+ <div class="col-md-8 col-md-offset-2">
+ <div id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="item active">
+ <img src="{% static "images/mainceiling/1.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/2.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/3.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/4.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/5.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/6.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/7.jpg" %}" alt="" />
+ </div>
+ <div class="item">
+ <img src="{% static "images/mainceiling/8.jpg" %}" alt="" />
+ </div>
+     <div class="item">
+ <img src="{% static "images/mainceiling/9.jpg" %}" alt="" />
+ </div>
+ </div>
+ </div>
+ <div class="clearfix">
+ <div id="thumbcarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
+ <div class="carousel-inner">
+ <div class="item active">
+ <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static "images/mainceiling/1.jpg" %}"></div>
+ <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static "images/mainceiling/2.jpg" %}"></div>
+ <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static "images/mainceiling/3.jpg" %}"></div>
 
-                    <div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/6.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/6.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
-				</div>
+ </div>
+ <div class="item">
+      <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static "images/mainceiling/4.jpg" %}"></div>
+ <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{% static "images/mainceiling/5.jpg" %}"></div>
+ <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{% static "images/mainceiling/6.jpg" %}"></div>
+ </div>
+     <div class="item">
+     <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{% static "images/mainceiling/7.jpg" %}"></div>
+ <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{% static "images/mainceiling/8.jpg" %}"></div>
+      <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="{% static "images/mainceiling/9.jpg" %}"></div>
+ </div>
+ </div>
+ <a class="left carousel-control vertical" href="#thumbcarousel" role="button" data-slide="prev">
+<span class="icon-arrow-left"></span>
+ </a>
+ <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+ <span class="icon-arrow-right"></span>
+ </a>
+ </div>
+ </div>
+ </div>
 
-                <div class="col-md-4">
-					<div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/7.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/7.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
+</div><!-- /.row -->
+</div><!-- /.container -->
 
-					<div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/8.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/8.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
-
-                    <div class="gallery-item space30">
-						<a href="{% static "images/mainceiling/9.jpg" %}" / class="swipebox-video">
-							<img src="{% static "images/mainceiling/9.jpg" %}" / class="img-responsive" alt=""/>
-							<i class="icon2-plus-circle"></i>
-						</a>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-	</div>
 
         <!-- ABOUT -->
         <div class="space30"></div>
@@ -432,7 +481,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<article>
-						<h2 class="post-title text-center">Отзывы</h2>
+						<h2 class="post-title text-center">Отзывы о нашей работе</h2>
 					</article>
 
 					<div class="comments">
@@ -472,15 +521,17 @@
                     </div>
 
                     <div class="col-md-5 right-align">
-                        <h5>Контакты</h5>
-
+                        <h3>Контакты</h3>
+                        <h5>+7 953 798 72 98</h5>
+                        <p>г. Новосибирск</p>
+                        <div class="space10"></div>
                         <div class="footer-social space10">
                             <a href="#" class="fa fa-vk"></a>
                             <a href="#" class="fa fa-odnoklassniki"></a>
                             <a href="#" class="fa fa-youtube"></a>
                             <a href="#" class="fa fa-instagram"></a>
                         </div>
-                        <p>г. Новосибирск, +7 953 798 72 98</p>
+
 
                     </div>
                 </div>

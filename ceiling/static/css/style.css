@@ -843,8 +843,9 @@ ul, ol, li {
 }
 .benifits p{
 	color:#414e5b;
-	font-size: 18px;
-	line-height:26px;
+	font-size: 20px;
+	line-height:28px;
+	text-indent: 25px;
 }
 .benifits p span{
 	font-size: 35px;
@@ -871,7 +872,7 @@ ul, ol, li {
 .intro8 {
 	background: #262626 url(../images/bg/8.jpg) no-repeat center;
 	background-size: cover;
-	padding: 100px 0 0;
+	padding: 150px 0 100px;
 }
 
 .intro8 .overlay {
@@ -894,171 +895,6 @@ ul, ol, li {
 	color: #2d456b;
 	opacity: 1;
 	padding: 0 0 20px;
-	line-height: 28px;
-}
-
-/* 4.9. Intro / 9 */
-
-.intro9 {
-	background: #262626 url(../images/bg/9.jpg) no-repeat center;
-	background-size: cover;
-	padding: 180px 0 0;
-	overflow: hidden;
-}
-
-.intro9 h3 {
-	color: #fff;
-	margin: 0px 0px 30px;
-	font-size: 54px;
-	font-weight: 400;
-	letter-spacing: -2px;
-	line-height: 54px;
-}
-
-.intro9 p {
-	font-size: 15px;
-	font-weight: 400;
-	color: #fff;
-	opacity: 1;
-	padding: 0 10% 20px;
-	line-height: 28px;
-}
-
-.intro9 img {
-	border: 40px solid #000;
-	border-radius: 30px;
-	max-width: 90%;
-	margin: -50px 11% -100px;
-}
-
-/* 4.10. Intro / 10 */
-
-.intro10 {
-	background: #262626 url(../images/bg/10.jpg) no-repeat center;
-	background-size: cover;
-	padding: 220px 0 170px;
-}
-
-.intro10 .overlay {
-	background: #000;
-	opacity: 0.15;
-}
-
-.intro10 h3 {
-	color: #fff;
-	margin: -10px 0px 25px;
-	font-size: 46px;
-	font-weight: 400;
-	text-transform: none;
-	letter-spacing: -1px;
-}
-
-.intro10 .video,
-.intro17 .video {
-	webkit-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
-	-moz-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
-	box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
-}
-
-.intro10-nl {
-	width: 85%;
-	margin: 0;
-}
-
-.intro10-nl input {
-	border-radius: 50px;
-	margin: 0;
-	width: 100%;
-}
-
-.intro10-nl .btn {
-	border-radius: 0 30px 30px 0;
-}
-
-/* 4.11. Intro / 11 */
-
-.intro11 {
-	background: #262626 url(../images/bg/11.jpg) no-repeat center;
-	background-size: cover;
-	padding: 230px 0 220px;
-}
-
-.intro11 h3 {
-	color: #fff;
-	margin: 0px 0px 30px;
-	font-size: 60px;
-	font-weight: 200;
-}
-
-.intro11 p {
-	font-size: 17px;
-	font-weight: 400;
-	color: #fff;
-	opacity: 1;
-	padding: 0 12% 40px;
-	line-height: 28px;
-}
-
-.intro11-nl {
-	width: 90%;
-}
-
-.intro11-nl .col-md-4 {
-	padding: 0 5px;
-}
-
-/* 4.12. Intro / 12 */
-
-.intro12 .overlay {
-	background: #000;
-	opacity: 0.35;
-}
-
-.intro12 {
-	background: #262626 url(../images/bg/12.jpg) no-repeat center;
-	background-size: cover;
-	padding: 260px 0 230px;
-}
-
-.intro12 h3 {
-	color: #fff;
-	margin: 0px 0px 30px;
-	font-size: 55px;
-	font-weight: 200;
-}
-
-.intro12 p {
-	font-size: 16px;
-	font-weight: 400;
-	color: #fff;
-	opacity: 1;
-	padding: 0 10%;
-	margin: 0 0 -15px;
-	line-height: 28px;
-}
-
-/* 4.13. Intro / 13 */
-
-.intro13 {
-	background: #262626 url(../images/bg/13.jpg) no-repeat center;
-	background-size: cover;
-	padding: 200px 0 140px;
-}
-
-.intro13 h3 {
-	color: #fff;
-	margin: 0px 0px 30px;
-	font-size: 43px;
-	font-weight: 200;
-}
-
-.intro13 p {
-	font-size: 16px;
-	font-weight: 400;
-	color: #fff;
-	opacity: 1;
-	padding: 0;
-	margin: 0 0 -15px;
 	line-height: 28px;
 }
 
@@ -2402,8 +2238,7 @@ ul, ol, li {
 /* 14. BLOG STYLES */
 
 .blog-content {
-	padding: 70px 0;
-	border-bottom: 1px solid #eee;
+	padding: 5px 0;
 }
 
 .blog-content article {
@@ -3138,6 +2973,12 @@ ul, ol, li {
 
 .elements-content {
 	padding: 30px 0;
+}
+
+.elements-content ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style: disc;
 }
 
 .border-top {
@@ -4221,7 +4062,7 @@ footer .list-inline li {
 }
 
 .stats2-info p {
-	color: #fff;
+	color: #ecb124;
 	font-size: 40px;
 	margin: 0 0 20px;
 	font-family: Alegreya Sans;
@@ -4272,7 +4113,8 @@ footer .list-inline li {
 }
 
 .elements-content p {
-	font-size: 14px;
+	font-size: 16px;
+	text-indent: 25px;
 }
 
 /* flip boxes */
@@ -5044,15 +4886,6 @@ input:focus, textarea:focus {
 	background: #c9c9c9;
 }
 
-.footer2 .google-map {
-	border: 1px solid #555;
-	height: 290px;
-}
-
-.footer2 #map {
-	height: 280px;
-}
-
 .footer2 #contactForm input {
 	height: 43px;
 	padding: 0 20px;
@@ -5084,11 +4917,11 @@ input:focus, textarea:focus {
 }
 
 .footer2 h5 {
-	color: #2f4870;
+	color: #000;
 	font-size: 16px;
 	font-weight: bolder;
 	text-transform: uppercase;
-	margin: 0px 0px 15px;
+	margin: 10px 0px 5px;
 	font-size: 16px;
 	letter-spacing: 0px;
 }
@@ -5101,8 +4934,9 @@ input:focus, textarea:focus {
 }
 
 .footer2 p {
-	color: #777;
+	color: #000;
 	font-size: 14px;
+	font-weight: 600;
 }
 
 .footer2 .footer-social a {
@@ -5110,7 +4944,7 @@ input:focus, textarea:focus {
 	margin-right: 10px;
 	margin-left: 0px;
 	margin-top: 30px;
-	color: #2f4870;
+	color: #000;
 }
 
 .footer2 .footer-social {
@@ -6390,4 +6224,27 @@ input:focus, textarea:focus {
 }
 .footerP p:hover{
 	color:#e2574c;
+}
+
+.body-bg {
+    background: #dde7f6;
+}
+
+
+#toTop {
+    width:100px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    z-index: 999999;
+}
+
+.advice-intro h4{
+    text-indent: 25px;
+    font-size: 20px;
+    line-height: 26px;;
 }
