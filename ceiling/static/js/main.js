@@ -236,7 +236,3 @@ $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 $('#MyModal').on('hidden.bs.modal', function () {
     $(this).find('form').trigger('reset');
 })
-
-var iframe_element = window.frames['iframe_name'];
-iframe_element.document.open();
-iframe_element.document.close();

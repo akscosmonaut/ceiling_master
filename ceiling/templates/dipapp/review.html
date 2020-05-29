@@ -8,38 +8,28 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
     <title>Потолочный мастер</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
 
-         <!-- FAVICON -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="static/images/favicon.html">
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="{% static "css/icons/fontawesome/css/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/icon2/style.css" %}" />
-    <link rel="stylesheet" href="{% static "js/vendors/swipebox/css/swipebox.min.css" %}" />
-    <link rel="stylesheet" href="{% static "css/ilmosys-icons.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/icons/fontawesome/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/icon2/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'js/vendors/swipebox/css/swipebox.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/ilmosys-icons.css' %}"/>
 
     <!-- THEME / PLUGIN CSS -->
-    <link rel="stylesheet" href="{%static "js/vendors/slick/slick.css" %}" />
-    <link rel="stylesheet" href="{%static "css/style.css" %}" />
+    <link rel="stylesheet" href="{%static 'js/vendors/slick/slick.css' %}"/>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}"/>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//code-ya.jivosite.com/widget/iPw4v4AtXZ" async></script>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 <body id="page-top">
@@ -50,8 +40,7 @@
         <nav class="navbar-inverse navbar-lg navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand brand"><img
-                            src="{% static "images/logo.png" %}" /></a>
+                    <a href="index.html" class="navbar-brand brand"><img src="{% static 'images/logo.png' %}"/></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -70,19 +59,19 @@
                         <li class="dropdown mm-menu">
                             <a href="index">Главная</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="ceiling_kind">Виды потолков</a>
                         </li>
-                        <li class="dropdown mm-menu">
+                        <li>
                             <a href="price">Цены</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="gallery">Готовые работы</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="advice">Советы мастера</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="review">Отзывы</a>
                         </li>
                     </ul>
@@ -91,155 +80,151 @@
         </nav>
     </header>
 
-	 <div class="bd-example">
-  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h2 class="modal-title text-center" id="exampleModalLabel">Оставить отзыв</h2>
-        </div>
-        <div class="modal-body">
-            <p>Пожалуйста, оставьте отзыв о нашей работе!</p>
-          <form method="POST" action="create_review/" novalidate>
-                {% csrf_token %}
-              <!--{{ form|as_bootstrap }}-->
-            <!--<div class="form-group">-->
-                <!--<table>-->
-                    <!--</table>-->
-              <!--&lt;!&ndash;<input type="text" class="form-control" id="phone" placeholder="Телефон">&ndash;&gt;-->
-            <!--</div>-->
-              {{ form.name }}
-              <div class="space10"> </div>
-              {{ form.surname }}
-              <div class="space10"> </div>
-              {{ form.text }}
-              <p>Выберите аватар:</p>
-
-              <table><tr>
-                  {% for radio in form.image %}
-                  <td>
-                  {{ radio.tag }}
-                  {{ radio.choice_label }}
-                  </td>
-                  {% endfor %}
-              </tr></table>
-
-              </tr>
-              <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-          <input type="submit" class="btn btn-primary" value="Отправить"></input>
-        </div>
-
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- INFO CONTENT -->
-        <div class="space100 other-menu">
-        </div>
-    <!-- INTRO -->
-    <!-- BLOG -->
-    <div class="complete-works">
-             <div class="text-center">
-                    <div class="container">
-                        <h3>Отзывы</h3>
+    <!-- MODAL FORM -->
+    <div class="bd-example">
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title text-center" id="exampleModalLabel">Оставить отзыв</h2>
                     </div>
+                    <div class="modal-body">
+                        <p>Пожалуйста, оставьте отзыв о нашей работе!</p>
+                        <form method="POST" action="create_review/" novalidate>
+                            {% csrf_token %}
+                            {{ form.name }}
+                            <div class="space10"></div>
+                            {{ form.surname }}
+                            <div class="space10"></div>
+                            {{ form.text }}
+                            <p>Выберите аватар:</p>
+                            <table>
+                                <tr>
+                                    {% for radio in form.image %}
+                                    <td>
+                                        {{ radio.tag }}
+                                        {{ radio.choice_label }}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                            </table>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <input type="submit" class="btn btn-primary" value="Отправить"></input>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-
+            </div>
         </div>
+    </div>
 
-	<div class="blog-content blog-single">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<div class="comments">
-						<!-- Comment -->
+    <div class="space100 other-menu"></div>
+
+    <!-- HEADER -->
+    <div class="complete-works">
+        <div class="text-center">
+            <div class="container">
+                <h3>Отзывы</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REVIEW -->
+    <div class="blog-content blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="comments">
+
                         {% if review.count > 0 %}
                         {% for rev in review %}
-						<div class="media v-align-children">
-							<a class="pull-left">
-							<img class="media-object" src="{% static rev.image %}" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">{{ rev.name }} {{ rev.surname }}
-									<small>- {{ rev.created_at|localtime|date:"d.m.Y H:i" }}</small>
-								</h4>
-								{{ rev.text }}
-							</div>
-						</div>
+
+                        <div class="media v-align-children">
+                            <a class="pull-left">
+                                <img class="media-object" src="{% static rev.image %}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ rev.name }} {{ rev.surname }}
+                                    <small>- {{ rev.created_at|localtime|date:"d.m.Y H:i" }}</small>
+                                </h4>
+                                {{ rev.text }}
+                            </div>
+                        </div>
+
                         {% endfor %}
                         {% else %}
+
                         <h4>Пока нет ни одного отзыва.</h4>
-                        <div class = "space30"></div>
+                        <div class="space30"></div>
 
                         {% endif %}
-					</div>
-				</div>
-
-				<div class="col-md-3 sidebar">
-					<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#orderModal">Оставить отзыв
-                    </button>
-				</div>
-			</div>
-		</div>
-
-        <!-- FOOTER -->
-        <footer class="footer2" id="footer2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <a href="index-2.html" class="footer-logo"><img
-                                src="{% static "images/dark_logo.png" %}" /></a>
-                        <div class="space20"></div>
-                    </div>
-
-                    <div class="col-md-5 right-align">
-                        <h5>Контакты</h5>
-
-                        <div class="footer-social space10">
-                            <a href="#" class="fa fa-vk"></a>
-                            <a href="#" class="fa fa-odnoklassniki"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </div>
-                        <p>г. Новосибирск, +7 953 798 72 98</p>
 
                     </div>
                 </div>
-            </div>
-        </footer>
 
-        <!-- COPYRIGHT -->
-        <div class="footer-copy">
-            <div class="container">
-                &copy; 2020. Потолочный мастер.
+                <div class="col-md-3 sidebar">
+                    <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#orderModal">Оставить отзыв
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-	</div>
+
+    <!-- FOOTER -->
+    <footer class="footer2" id="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <a href="index-2.html" class="footer-logo"><img
+                            src="{% static 'images/dark_logo.png' %}"/></a>
+                    <div class="space20"></div>
+                </div>
+
+                <div class="col-md-5 right-align">
+                    <h5>Контакты</h5>
+
+                    <div class="footer-social space10">
+                        <a href="#" class="fa fa-vk"></a>
+                        <a href="#" class="fa fa-odnoklassniki"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <p>г. Новосибирск, +7 953 798 72 98</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-copy">
+        <div class="container">
+            &copy; 2020. Потолочный мастер.
+        </div>
+    </div>
+</div>
 
 
 <!-- JAVASCRIPT =============================-->
-    <script src="{% static "js/jquery.js" %}"></script>
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/vendors/slick/slick.min.js" %}"></script>
-    <script src="{% static "js/vendors/jquery.easing.min.js" %}"></script>
-    <script src="{% static "js/vendors/stellar.js" %}"></script>
-    <script src="{% static "js/vendors/isotope/isotope.pkgd.js" %}"></script>
-    <script src="{% static "js/vendors/swipebox/js/jquery.swipebox.min.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
-    <script src="{% static "js/vendors/mc/jquery.ketchup.all.min.js" %}"></script>
-    <script src="{% static "js/vendors/mc/main.js" %}"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendors/slick/slick.min.js' %}"></script>
+<script src="{% static 'js/vendors/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/vendors/stellar.js' %}"></script>
+<script src="{% static 'js/vendors/isotope/isotope.pkgd.js' %}"></script>
+<script src="{% static 'js/vendors/swipebox/js/jquery.swipebox.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/vendors/mc/jquery.ketchup.all.min.js' %}"></script>
+<script src="{% static 'js/vendors/mc/main.js' %}"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="{% static "js/vendors/gmap.js" %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="{% static 'js/vendors/gmap.js' %}"></script>
 
 </body>
 

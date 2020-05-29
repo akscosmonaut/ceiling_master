@@ -8,61 +8,55 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
     <title>Потолочный мастер</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
 
-        <!-- FAVICON -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="static/images/favicon.html">
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="{% static "css/icons/fontawesome/css/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/icon2/style.css" %}" />
-    <link rel="stylesheet" href="{% static "js/vendors/swipebox/css/swipebox.min.css" %}" />
-    <link rel="stylesheet" href="{% static "css/ilmosys-icons.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/icons/fontawesome/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/icon2/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'js/vendors/swipebox/css/swipebox.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/ilmosys-icons.css' %}"/>
+
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="{% static 'js/jquery.carousel.fullscreen.js' %}"/>
 
     <!-- THEME / PLUGIN CSS -->
-    <link rel="stylesheet" href="{%static "js/vendors/slick/slick.css" %}" />
-    <link rel="stylesheet" href="{%static "css/style.css" %}" />
+    <link rel="stylesheet" href="{%static 'js/vendors/slick/slick.css' %}"/>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/slider/2016/cfb/jquery.carousel.fullscreen.css"/>
+    <link rel="stylesheet" href="{% static 'css/jquery.carousel.fullscreen.css' %}"/>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/slider/2016/cfb/jquery.carousel.fullscreen.css" />
-   <link rel="stylesheet" href="{% static "js/jquery.carousel.fullscreen.js" %}" />
-    <link rel="stylesheet" href="{% static "css/jquery.carousel.fullscreen.css" %}" />
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-$(function() {
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#toTop').fadeIn();
-} else {
-$('#toTop').fadeOut();
-}
-});
-$('#toTop').click(function() {
-$('body,html').animate({scrollTop:0},800);
-});
-});
-</script>
+    <!-- TO UP -->
+    <script type="text/javascript">
+        $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+        });
+        });
+
+
+    </script>
 
 </head>
-<div id = "toTop" > <img src="{% static "images/arrow.png" %}" / class="pull-center" width=70%
-                             alt=""/> </div>
+<div id="toTop"><img src="{% static 'images/arrow.png' %}" class="pull-center" width=70% alt=""/></div>
 <body id="page-top">
 
 <div class="body">
@@ -71,39 +65,35 @@ $('body,html').animate({scrollTop:0},800);
         <nav class="navbar-inverse navbar-lg navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand brand"><img
-                            src="{% static "images/logo.png" %}" class="img-fluid"/></a>
+                    <a href="index" class="navbar-brand brand"><img
+                            src="{% static 'images/logo.png' %}" class="img-fluid"/></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"
                         aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
 
                 <div class="collapse navbar-collapse"
                      id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown mm-menu">
+                        <li>
                             <a href="index">Главная</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="ceiling_kind">Виды потолков</a>
                         </li>
-                        <li class="dropdown mm-menu">
+                        <li>
                             <a href="price">Цены</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="gallery">Готовые работы</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="advice">Советы мастера</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="review">Отзывы</a>
                         </li>
                     </ul>
@@ -112,50 +102,52 @@ $('body,html').animate({scrollTop:0},800);
         </nav>
     </header>
 
+    <!-- MODAL WINDOW WITH CALCULATOR --->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <div class="uCalc_286606"></div>
-                          <script> var widgetOptions286606 = { bg_color: "transparent" };
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="uCalc_286606"></div>
+                    <script> var widgetOptions286606 = { bg_color: "transparent" };
                           (function() { var a = document.createElement("script"), h = "head"; a.async = true;
-                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })(); a.contentWindow.document.close();</script>
-                      </div>
-                    </div>
-                  </div>
+                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })(); a.contentWindow.document.close();
+
+
+                    </script>
                 </div>
-    <div class="bd-example">
-  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h2 class="modal-title text-center" id="exampleModalLabel">Оставить заявку</h2>
+            </div>
         </div>
-        <div class="modal-body">
-            <p>Оставьте заявку и мы с Вами свяжемся в ближайшее время.</p>
-          <form method="POST" action="create/" novalidate>
-                {% csrf_token %}
-              {{ form|as_bootstrap }}
-            <!--<div class="form-group">-->
-                <!--<table>-->
-                    <!--</table>-->
-              <!--&lt;!&ndash;<input type="text" class="form-control" id="phone" placeholder="Телефон">&ndash;&gt;-->
-            <!--</div>-->
-              <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-          <input type="submit" class="btn btn-primary" value="Отправить"></input>
-        </div>
-
-          </form>
-        </div>
-
-      </div>
     </div>
-  </div>
-</div>
+
+    <!-- MODAL WINDOW WITH MAKING AN ORDER --->
+    <div class="bd-example">
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title text-center" id="exampleModalLabel">Оставить заявку</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Оставьте заявку и мы с Вами свяжемся в ближайшее время.</p>
+                        <form method="POST" action="create/" novalidate>
+                            {% csrf_token %}
+                            {{ form|as_bootstrap }}
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <input type="submit" class="btn btn-primary" value="Отправить">
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- INTRO -->
     <div class="intro intro8">
         <div class="container">
@@ -165,17 +157,14 @@ $('body,html').animate({scrollTop:0},800);
                     <h3>Монтаж натяжных потолков любого уровня сложности</h3>
                     <p>Работаем без предоплаты.</p>
                     <div class="col-md-6">
-                    <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#myModal">Рассчитать
-                        стоимость</button>
+                        <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#myModal">Рассчитать
+                            стоимость
+                        </button>
                     </div>
                 </div>
-
                 <div class="col-md-6">
-                    <img src="{% static "images/photo1.jpg" %}" / class="img-fluid img-responsive space30" alt=""/>
+                    <img src="{% static 'images/photo1.jpg' %}" class="img-fluid img-responsive space30" alt=""/>
                 </div>
-
-<!-- Модальное окно -->
-
             </div>
         </div>
     </div>
@@ -215,49 +204,49 @@ $('body,html').animate({scrollTop:0},800);
     </div>
 
 
-
-
-
     <div class="intro intro-benifits">
 
         <div class="row center-content">
             <div class="col-md-7">
-                <img src="{% static "images/bg/benifits.jpg" %}" class="img-fluid img-responsive space30"
+                <img src="{% static 'images/bg/benifits.jpg' %}" class="img-fluid img-responsive space30"
                      alt=""/>
             </div>
-
             <div class="container">
-                <div class = "space30"></div>
-            <div class="row center-content">
-                <div class="col-md-9 benifits col-md-push-1">
-                    <h3>Натяжные потолки - это наш профиль</h3> <br/>
-                    <div class="text-justify">
-                    <p>Наша компания занимается проектированием, изготовлением
-                        полотен и монтажом всей конструкции.
-                        Опыт работы в данной сфере более 5 лет. Мы гарантируем
-                        высокое качество и доступные цены!</p>
+                <div class="space30"></div>
+                <div class="row center-content">
+                    <div class="col-md-9 benifits col-md-push-1">
+                        <br>
+                        <h3>Натяжные потолки - это наш профиль</h3>
+                        <br>
+                        <div class="text-justify">
+                            <br>
+                            <p>Наша компания занимается проектированием, изготовлением
+                                полотен и монтажом всей конструкции. Опыт работы в данной сфере более 5 лет. Мы гарантируем
+                                высокое качество и доступные цены!</p>
+                            <br>
+                        </div>
+                        <p><span>=</span> Работа с различными видами потолков, в любом помещении</p>
+                        <p><span>=</span> Бесплатный выезд замерщика</p>
+                        <p><span>=</span> Монтаж в городе и по области</p>
+                        <p><span>=</span> Без посредников
+                        <div class="space30"></div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <div class="pull-right">
+                                <button type="button" class="space30 btn btn-lg btn-dark btn-block" data-toggle="modal" data-target="#orderModal">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <br/>
-                    <p><span>=</span> Работа с различными видами потолков, в
-                        любом помещении</p>
-                    <p><span>=</span> Бесплатный выезд замерщика</p>
-                    <p><span>=</span> Монтаж в городе и по области</p>
-                    <p><span>=</span> Без посредников
-                    <div class="space30"></div>
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <div class="pull-right">
-                      <button type="button" class="space30 btn btn-lg btn-dark btn-block" data-toggle="modal" data-target="#orderModal">Оставить заявку</button>
-                    </div>                        </div>
                 </div>
             </div>
-                </div>
         </div>
     </div>
     <section class="services icon-box">
         <div class="container">
             <div class="row">
-                    <div class="basic-services text-center">
+                <div class="basic-services text-center">
                     <div class="container">
                         <h2>Основные направления услуг</h2>
                     </div>
@@ -265,7 +254,7 @@ $('body,html').animate({scrollTop:0},800);
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service-box">
-                        <img src="{% static "images/3.png" %}" / class="pull-center" width=30%
+                        <img src="{% static 'images/3.png' %}" class="pull-center" width=30%
                              alt=""/>
                         <div>
                             <h4>Монтаж</h4>
@@ -277,7 +266,7 @@ $('body,html').animate({scrollTop:0},800);
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service-box">
-                        <img src="{% static "images/4.png" %}" /  class="pull-center" width=30%
+                        <img src="{% static 'images/4.png' %}" class="pull-center" width=30%
                              alt=""/>
                         <div>
                             <h4>Ремонт</h4>
@@ -289,7 +278,7 @@ $('body,html').animate({scrollTop:0},800);
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service-box">
-                        <img src="{% static "images/5.png" %}" /  class="pull-center" width=30%
+                        <img src="{% static 'images/5.png' %}" class="pull-center" width=30%
                              alt=""/>
                         <div>
                             <h4>Демонтаж</h4>
@@ -305,60 +294,52 @@ $('body,html').animate({scrollTop:0},800);
     <div class="advantages">
         <div class="container">
             <div class="container">
-                    <h3>Преимущества натяжных потолков</h3>
-                </div>
+                <h3>Преимущества натяжных потолков</h3>
+            </div>
             <div class="left-align">
 
                 <div class="col-md-12">
                     <div class="dropcap dropcap-lite">
                         <span class="dropcap-radius"> 1 </span>
-                        <h4>БЕЗОПАСНОСТЬ</h4>Натяжные потолки абсолютно
-                        безопасны для здоровья, поскольку не имеют запаха, не
-                        горят, не выделяют токсических веществ и полностью
-                        гипоаллергенны.
+                        <h4>БЕЗОПАСНОСТЬ</h4>Натяжные потолки абсолютно безопасны для здоровья, поскольку не имеют запаха, не
+                        горят, не выделяют токсических веществ и полностью гипоаллергенны.
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="dropcap dropcap-lite">
                         <span class="dropcap-radius"> 2 </span>
                         <h4>ДОЛГОВЕЧНОСТЬ</h4>
-                        Срок службы потолков практически
-                        не ограничен, а это значит, что при правильном уходе,
-                        даже спустя 20 лет потолок не потеряет эластичность и
-                        прочность, а также сохранит свой первоначальный вид.
+                        Срок службы потолков практически не ограничен, а это значит, что при правильном уходе,
+                        даже спустя 20 лет потолок не потеряет эластичность и прочность, а также сохранит свой первоначальный вид.
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="dropcap dropcap-lite">
                         <span class="dropcap-radius"> 3 </span>
-                        <h4>ПРАКТИЧНОСТЬ</h4>Натяжные потолки являются одними
-                        из самых практичных благодаря своим звукоизолирующим
-                        свойствам и влагостойкости. К их поверхности не
-                        притягивается пыль.
+                        <h4>ПРАКТИЧНОСТЬ</h4>Натяжные потолки являются одними из самых практичных благодаря своим звукоизолирующим
+                        свойствам и влагостойкости. К их поверхности не притягивается пыль.
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="dropcap dropcap-lite">
                         <span class="dropcap-radius"> 4 </span>
-                        <h4>НЕПРИХОТЛИВОСТЬ</h4>Для того, чтобы натяжные
-                        потолки прослужили вам много лет, достаточно лишь
-                        изредка протирать их гладкую и водонепроницаемую
-                        поверхность с помощью обычного мыльного раствора.
+                        <h4>НЕПРИХОТЛИВОСТЬ</h4>Для того, чтобы натяжные потолки прослужили вам много лет, достаточно лишь
+                        изредка протирать их гладкую и водонепроницаемую поверхность с помощью обычного мыльного раствора.
                     </div>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
 
 
-        <div class="complete-works">
-             <div class="text-center">
-                    <div class="container">
-                        <h3>Выполненные работы</h3>
-                    </div>
-                </div>
-
+    <div class="complete-works">
+        <div class="text-center">
+            <div class="container">
+                <h3>Выполненные работы</h3>
+            </div>
         </div>
+
+    </div>
 
 
     <style>
@@ -384,83 +365,82 @@ body-gallery{background: #dde7f6 }
 display:inline;
 vertical-align: middle;
 }
-</style>
-
- <div class="container">
- <div class="row">
-
- <div class="col-md-8 col-md-offset-2">
- <div id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
- <div class="carousel-inner">
- <div class="item active">
- <img src="{% static "images/mainceiling/1.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/2.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/3.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/4.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/5.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/6.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/7.jpg" %}" alt="" />
- </div>
- <div class="item">
- <img src="{% static "images/mainceiling/8.jpg" %}" alt="" />
- </div>
-     <div class="item">
- <img src="{% static "images/mainceiling/9.jpg" %}" alt="" />
- </div>
- </div>
- </div>
- <div class="clearfix">
- <div id="thumbcarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
- <div class="carousel-inner">
- <div class="item active">
- <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static "images/mainceiling/1.jpg" %}"></div>
- <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static "images/mainceiling/2.jpg" %}"></div>
- <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static "images/mainceiling/3.jpg" %}"></div>
-
- </div>
- <div class="item">
-      <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static "images/mainceiling/4.jpg" %}"></div>
- <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{% static "images/mainceiling/5.jpg" %}"></div>
- <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{% static "images/mainceiling/6.jpg" %}"></div>
- </div>
-     <div class="item">
-     <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{% static "images/mainceiling/7.jpg" %}"></div>
- <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{% static "images/mainceiling/8.jpg" %}"></div>
-      <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="{% static "images/mainceiling/9.jpg" %}"></div>
- </div>
- </div>
- <a class="left carousel-control vertical" href="#thumbcarousel" role="button" data-slide="prev">
-<span class="icon-arrow-left"></span>
- </a>
- <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
- <span class="icon-arrow-right"></span>
- </a>
- </div>
- </div>
- </div>
-
-</div><!-- /.row -->
-</div><!-- /.container -->
 
 
-        <!-- ABOUT -->
-        <div class="space30"></div>
 
-        <!-- PARALLAX -->
-        <section class="parallax1 text-center">
-            <div class="advantages">
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{% static 'images/mainceiling/1.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/2.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/3.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/4.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/5.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/6.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/7.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/8.jpg' %}" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'images/mainceiling/9.jpg' %}" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div id="thumbcarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static 'images/mainceiling/1.jpg' %}"></div>
+                                <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static 'images/mainceiling/2.jpg' %}"></div>
+                                <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static 'images/mainceiling/3.jpg' %}"></div>
+
+                            </div>
+                            <div class="item">
+                                <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static 'images/mainceiling/4.jpg' %}"></div>
+                                <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{% static 'images/mainceiling/5.jpg' %}"></div>
+                                <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{% static 'images/mainceiling/6.jpg' %}"></div>
+                            </div>
+                            <div class="item">
+                                <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{% static 'images/mainceiling/7.jpg' %}"></div>
+                                <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{% static 'images/mainceiling/8.jpg' %}"></div>
+                                <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="{% static 'images/mainceiling/9.jpg' %}"></div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control vertical" href="#thumbcarousel" role="button" data-slide="prev">
+                            <span class="icon-arrow-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space30"></div>
+
+    <!-- PARALLAX -->
+    <section class="parallax1 text-center">
+        <div class="advantages">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -472,95 +452,93 @@ vertical-align: middle;
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- TESTIMONIALS -->
-        <div class="testimonials-white">
-            <div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<article>
-						<h2 class="post-title text-center">Отзывы о нашей работе</h2>
-					</article>
+    <!-- REVIEW -->
+    <div class="testimonials-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <article>
+                        <h2 class="post-title text-center">Отзывы о нашей работе</h2>
+                    </article>
 
-					<div class="comments">
-						<!-- Comment -->
+                    <div class="comments">
+                        <!-- Comment -->
                         {% if review.count > 0 %}
                         {% for rev in review|slice:":3" %}
-						<div class="media v-align-children">
-							<a class="pull-left">
-							<img class="media-object" src="{% static rev.image %}" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">{{ rev.name }} {{ rev.surname }}
-									<small>- {{ rev.created_at|localtime|date:"d.m.Y H:i" }}</small>
-								</h4>
-								{{ rev.text }}
-							</div>
-						</div>
+                        <div class="media v-align-children">
+                            <a class="pull-left">
+                                <img class="media-object" src="{% static rev.image %}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ rev.name }} {{ rev.surname }}
+                                    <small>- {{ rev.created_at|localtime|date:"d.m.Y H:i" }}</small>
+                                </h4>
+                                {{ rev.text }}
+                            </div>
+                        </div>
                         {% endfor %}
                         {% else %}
                         <h4>Пока нет ни одного отзыва.</h4>
-                        <div class = "space30"></div>
+                        <div class="space30"></div>
 
                         {% endif %}
-					</div>
-				</div>
-			</div>
-		</div>
-        </div>
-        <!-- FOOTER -->
-        <footer class="footer2" id="footer2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <a href="index-2.html" class="footer-logo"><img
-                                src="{% static "images/logo.png" %}" /></a>
-                        <div class="space20"></div>
-                    </div>
-
-                    <div class="col-md-5 right-align">
-                        <h3>Контакты</h3>
-                        <h5>+7 953 798 72 98</h5>
-                        <p>г. Новосибирск</p>
-                        <div class="space10"></div>
-                        <div class="footer-social space10">
-                            <a href="#" class="fa fa-vk"></a>
-                            <a href="#" class="fa fa-odnoklassniki"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </div>
-
-
                     </div>
                 </div>
-            </div>
-        </footer>
-
-        <!-- COPYRIGHT -->
-        <div class="footer-copy">
-            <div class="container">
-                &copy; 2020. Потолочный мастер.
             </div>
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer class="footer2" id="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <a href="index-2.html" class="footer-logo"><img src="{% static 'images/logo.png' %}"/></a>
+                    <div class="space20"></div>
+                </div>
 
-    <!-- JAVASCRIPT =============================-->
-    <script src="{% static "js/jquery.js" %}"></script>
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/vendors/slick/slick.min.js" %}"></script>
-    <script src="{% static "js/vendors/jquery.easing.min.js" %}"></script>
-    <script src="{% static "js/vendors/stellar.js" %}"></script>
-    <script src="{% static "js/vendors/isotope/isotope.pkgd.js" %}"></script>
-    <script src="{% static "js/vendors/swipebox/js/jquery.swipebox.min.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
-    <script src="{% static "js/vendors/mc/jquery.ketchup.all.min.js" %}"></script>
-    <script src="{% static "js/vendors/mc/main.js" %}"></script>
+                <div class="col-md-5 right-align">
+                    <h3>Контакты</h3>
+                    <h5>+7 953 798 72 98</h5>
+                    <p>г. Новосибирск</p>
+                    <div class="space10"></div>
+                    <div class="footer-social space10">
+                        <a href="#" class="fa fa-vk"></a>
+                        <a href="#" class="fa fa-odnoklassniki"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="{% static "js/vendors/gmap.js" %}"></script>
+    <!-- COPYRIGHT -->
+    <div class="footer-copy">
+        <div class="container">
+            &copy; 2020. Потолочный мастер.
+        </div>
+    </div>
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendors/slick/slick.min.js' %}"></script>
+<script src="{% static 'js/vendors/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/vendors/stellar.js' %}"></script>
+<script src="{% static 'js/vendors/isotope/isotope.pkgd.js' %}"></script>
+<script src="{% static 'js/vendors/swipebox/js/jquery.swipebox.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/vendors/mc/jquery.ketchup.all.min.js' %}"></script>
+<script src="{% static 'js/vendors/mc/main.js' %}"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="{% static 'js/vendors/gmap.js' %}"></script>
 
 </body>
 

@@ -6195,3 +6195,24 @@ input:focus, textarea:focus {
     font-size: 20px;
     line-height: 26px;;
 }
+
+.carousel {
+ margin-top: 20px;
+}
+.item .thumb {
+ width: 33.3%;
+ cursor: pointer;
+ float: left;
+}
+.item .thumb img {
+ width: 100%;
+ margin: 2px;
+}
+.item img {
+ width: 100%;
+}
+
+.vertical{
+display:inline;
+vertical-align: middle;
+}
