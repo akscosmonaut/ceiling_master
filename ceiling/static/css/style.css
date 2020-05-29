@@ -1,62 +1,9 @@
-/*------------------------------------------------------------------
-Theme Name: Sabil - Responsive Bootstrap Landing Page
-Version: 1.0
-Author:  divine-store
--------------------------------------------------------------------*/
+/*Fonts from Google Fonts*/
 
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
-
-	1. GLOBAL STYLES
-	2. COMMON STYLES 
-	3. HEADER STYLES 
-	4. INTRO STYLES
-		4.1. Intro / 1 
-		4.2. Intro / 2 
-		4.3. Intro / 3 
-		4.4. Intro / 4 
-		4.5. Intro / 5 
-		4.6. Intro / 6 
-		4.7. Intro / 7 
-		4.8. Intro / 8 
-		4.9. Intro / 9 
-		4.10. Intro / 10 
-		4.11. Intro / 11 
-		4.12. Intro / 12 
-		4.13. Intro / 13 
-		4.14. Intro / 14 
-		4.15. Intro / 15 
-		4.16. Intro / 16 
-		4.17. Intro / 17 
-		4.18. Intro / 18 
-		4.19. Intro / 19 
-		4.20. Intro / 20 
-	5. ICON BOX / SERVICES STYLES 
-	6. INFO STYLES 
-	7. TESTIMONIAL STYLES 
-	8. ABOUT   
-	9. VIDEO BOX 
-	10. FEATURES 
-	11. PRICING TABLE  
-	12. CLIENTS 
-	13. PAGE HEADER
-	14. BLOG STYLES 
-	15. SIDEBAR 
-	15. PAGE HEADER 
-	16. PORTFOLIO 
-	17. TEAM 
-	18. 404 STYLES
-	19. GOOGLE MAP 
-	20. CONTACT 
-	07. MAILCHIMP 
-	22. ELEMENTS 
-	23. COMMENTS 
-	24. FOOTER 
-	25. RESPONSIVE STYLES 
-
--------------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap);
+
+
 /* 1. GLOBAL STYLES */
 
 body {
