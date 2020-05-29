@@ -51,8 +51,6 @@
         $('body,html').animate({scrollTop:0},800);
         });
         });
-
-
     </script>
 
 </head>
@@ -108,11 +106,16 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="uCalc_286606"></div>
-                    <script> var widgetOptions286606 = { bg_color: "transparent" };
-                          (function() { var a = document.createElement("script"), h = "head"; a.async = true;
-                          a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })(); a.contentWindow.document.close();
-
-
+                    <script>
+                    var widgetOptions286606 = {
+                        bg_color: "transparent"
+                    };
+                    (function() {
+                        var a = document.createElement("script"), h = "head";
+                        a.async = true;
+                        a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=286606&t="+Math.floor(new Date()/18e5);
+                        document.getElementsByTagName(h)[0].appendChild(a)
+                    })();
                     </script>
                 </div>
             </div>
@@ -205,37 +208,38 @@
 
 
     <div class="intro intro-benifits">
-
-        <div class="row center-content">
-            <div class="col-md-7">
-                <img src="{% static 'images/bg/benifits.jpg' %}" class="img-fluid img-responsive space30"
-                     alt=""/>
-            </div>
-            <div class="container">
-                <div class="space30"></div>
-                <div class="row center-content">
-                    <div class="col-md-9 benifits col-md-push-1">
-                        <br>
-                        <h3>Натяжные потолки - это наш профиль</h3>
-                        <br>
-                        <div class="text-justify">
+        <div class="container">
+            <div class="row center-content">
+                <div class="col-md-6">
+                    <img src="{% static 'images/bg/benifits.jpg' %}" class="img-fluid img-responsive space20"
+                         alt=""/>
+                </div>
+                <div class="container">
+                    <div class="space30"></div>
+                    <div class="row center-content">
+                        <div class="col-md-12 benifits col-md-push-1">
                             <br>
-                            <p>Наша компания занимается проектированием, изготовлением
-                                полотен и монтажом всей конструкции. Опыт работы в данной сфере более 5 лет. Мы гарантируем
-                                высокое качество и доступные цены!</p>
+                            <h3>Натяжные потолки - это наш профиль</h3>
                             <br>
-                        </div>
-                        <p><span>=</span> Работа с различными видами потолков, в любом помещении</p>
-                        <p><span>=</span> Бесплатный выезд замерщика</p>
-                        <p><span>=</span> Монтаж в городе и по области</p>
-                        <p><span>=</span> Без посредников
-                        <div class="space30"></div>
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6">
-                            <div class="pull-right">
-                                <button type="button" class="space30 btn btn-lg btn-dark btn-block" data-toggle="modal" data-target="#orderModal">
-                                    Оставить заявку
-                                </button>
+                            <div class="text-justify">
+                                <br>
+                                <p>Наша компания занимается проектированием, изготовлением
+                                    полотен и монтажом всей конструкции. Опыт работы в данной сфере более 5 лет. Мы гарантируем
+                                    высокое качество и доступные цены!</p>
+                                <br>
+                            </div>
+                            <p><span>=</span> Работа с различными видами потолков, в любом помещении</p>
+                            <p><span>=</span> Бесплатный выезд замерщика</p>
+                            <p><span>=</span> Монтаж в городе и по области</p>
+                            <p><span>=</span> Без посредников
+                            <div class="space30"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8">
+                                <div class="pull-right">
+                                    <button type="button" class="space30 btn btn-lg btn-dark btn-block" data-toggle="modal" data-target="#orderModal">
+                                        Оставить заявку
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -340,36 +344,30 @@
         </div>
 
     </div>
-
-
     <style>
-body-gallery{background: #dde7f6 }
+        body-gallery{background: #dde7f6 }
 
-.carousel {
- margin-top: 20px;
-}
-.item .thumb {
- width: 33.3%;
- cursor: pointer;
- float: left;
-}
-.item .thumb img {
- width: 100%;
- margin: 2px;
-}
-.item img {
- width: 100%;
-}
+        .carousel {
+         margin-top: 20px;
+        }
+        .item .thumb {
+         width: 33.3%;
+         cursor: pointer;
+         float: left;
+        }
+        .item .thumb img {
+         width: 100%;
+         margin: 2px;
+        }
+        .item img {
+         width: 100%;
+        }
 
-.vertical{
-display:inline;
-vertical-align: middle;
-}
-
-
-
+        .vertical{
+        display:inline;
+        vertical-align: middle;
+        }
     </style>
-
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -424,10 +422,16 @@ vertical-align: middle;
                                 <div data-target="#carousel" data-slide-to="8" class="thumb"><img src="{% static 'images/mainceiling/9.jpg' %}"></div>
                             </div>
                         </div>
-                        <a class="left carousel-control vertical" href="#thumbcarousel" role="button" data-slide="prev">
+                        <div class="container">
+                            <div class="row">
+                        <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                            <div class="space60"></div>
                             <span class="icon-arrow-left"></span>
                         </a>
+                        </div>
+                            </div>
                         <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                            <div class="space60"></div>
                             <span class="icon-arrow-right"></span>
                         </a>
                     </div>
@@ -438,7 +442,6 @@ vertical-align: middle;
 
     <div class="space30"></div>
 
-    <!-- PARALLAX -->
     <section class="parallax1 text-center">
         <div class="advantages">
             <div class="container">
@@ -463,11 +466,11 @@ vertical-align: middle;
                     <article>
                         <h2 class="post-title text-center">Отзывы о нашей работе</h2>
                     </article>
-
                     <div class="comments">
-                        <!-- Comment -->
+
                         {% if review.count > 0 %}
                         {% for rev in review|slice:":3" %}
+
                         <div class="media v-align-children">
                             <a class="pull-left">
                                 <img class="media-object" src="{% static rev.image %}" alt="">
@@ -479,12 +482,15 @@ vertical-align: middle;
                                 {{ rev.text }}
                             </div>
                         </div>
+
                         {% endfor %}
                         {% else %}
+
                         <h4>Пока нет ни одного отзыва.</h4>
                         <div class="space30"></div>
 
                         {% endif %}
+
                     </div>
                 </div>
             </div>

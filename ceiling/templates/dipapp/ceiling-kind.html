@@ -6,38 +6,30 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
     <title>Потолочный мастер</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
 
-         <!-- FAVICON -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="static/images/favicon.html">
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="{% static "css/icons/fontawesome/css/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/icon2/style.css" %}" />
-    <link rel="stylesheet" href="{% static "js/vendors/swipebox/css/swipebox.min.css" %}" />
-    <link rel="stylesheet" href="{% static "css/ilmosys-icons.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/icons/fontawesome/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/icon2/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'js/vendors/swipebox/css/swipebox.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/ilmosys-icons.css' %}"/>
 
     <!-- THEME / PLUGIN CSS -->
-    <link rel="stylesheet" href="{%static "js/vendors/slick/slick.css" %}" />
-    <link rel="stylesheet" href="{%static "css/style.css" %}" />
+    <link rel="stylesheet" href="{%static 'js/vendors/slick/slick.css' %}"/>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}"/>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//code-ya.jivosite.com/widget/iPw4v4AtXZ" async></script>
+
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 
 </head>
 <body id="page-top">
@@ -49,38 +41,34 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="index" class="navbar-brand brand"><img
-                            src="{% static "images/logo.png" %}" /></a>
+                            src="{% static 'images/logo.png' %}" class="img-fluid"/></a>
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"
                         aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
 
                 <div class="collapse navbar-collapse"
                      id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown mm-menu">
+                        <li>
                             <a href="index">Главная</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="ceiling_kind">Виды потолков</a>
                         </li>
-                        <li class="dropdown mm-menu">
+                        <li>
                             <a href="price">Цены</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="gallery">Готовые работы</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="advice">Советы мастера</a>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="review">Отзывы</a>
                         </li>
                     </ul>
@@ -89,60 +77,57 @@
         </nav>
     </header>
 
-    <!-- INFO CONTENT -->
-        <div class="space100 other-menu">
-        </div>
-    <!-- INTRO -->
 
-            <div class="complete-works">
-             <div class="text-center">
-                    <div class="container">
-                        <h3>Готовые работы</h3>
+    <div class="space100 other-menu"></div>
+
+
+    <div class="complete-works">
+        <div class="text-center">
+            <div class="container">
+                <h3>Готовые работы</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="elements-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="section-head text-center space30">
+                        <h3>По типу материала</h3>
                     </div>
-                </div>
-
-        </div>
-
-
-
-
-
-    <!-- ELEMENTS - ACCORDION -->
-	<div class="elements-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="section-head text-center space30">
-						<h3>По типу материала</h3>
-					</div>
-					<div class="clearfix"></div>
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									ПВХ (плёночные)
-									</a>
-								</h4>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								<div class="panel-body">
+                    <div class="clearfix"></div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                       aria-controls="collapseOne">
+                                        ПВХ (плёночные)
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
                                     <div class="text-justify">
-									<p>Если говорить о доступной, качественной и долговечной отделке,
-                                    то натяжной потолок – это одно из лучших решений. Среди этой
-                                    группы материалов около 90% рынка декора занимают
-                                    поливинилхлоридные полотна. Это и не удивительно, учитывая,
-                                    что натяжные потолки ПВХ предоставляют возможность всего за
-                                    несколько часов работы получить идеально ровную, красивую и
-                                    не нуждающуюся в уходе поверхность.
-                                    При минимуме недостатков у них большое количество достоинств,
-                                    что и предопределяет спрос. Кроме того, огромное преимущество – это цена,
-                                    доступная для любого человека.
-                                    К основным достоинствам натяжных потолков ПВХ следует отнести:
-                                    </p>
+                                        <p>Если говорить о доступной, качественной и долговечной отделке,
+                                            то натяжной потолок – это одно из лучших решений. Среди этой
+                                            группы материалов около 90% рынка декора занимают
+                                            поливинилхлоридные полотна. Это и не удивительно, учитывая,
+                                            что натяжные потолки ПВХ предоставляют возможность всего за
+                                            несколько часов работы получить идеально ровную, красивую и
+                                            не нуждающуюся в уходе поверхность.
+                                            При минимуме недостатков у них большое количество достоинств,
+                                            что и предопределяет спрос. Кроме того, огромное преимущество – это цена,
+                                            доступная для любого человека.
+                                            К основным достоинствам натяжных потолков ПВХ следует отнести:
+                                        </p>
                                     </div>
                                     <ol>
-                                        <li><p>Эстетичность;<p></li>
+                                        <li><p>Эстетичность;
+                                            <p></li>
                                         <li><p>Прочность;</p></li>
                                         <li><p>Долговечность;</p></li>
                                         <li><p>Пожаробезопасность;</p></li>
@@ -150,179 +135,185 @@
                                         <li><p>Экологичность;</p></li>
                                         <li><p>Вариативность.</p></li>
                                     </ol>
-
-
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingTwo">
-								<h4 class="panel-title">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Тканевые
-									</a>
-								</h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								<div class="panel-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                       aria-expanded="false" aria-controls="collapseTwo">
+                                        Тканевые
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
                                     <div class="text-justify">
-                                    <p>Главная особенность данного типа материалов – в его основе лежит не поливинилхлоридная пленка, а полиэстер, обработанный полиуретаном. Благодаря этому он многократно прочнее по сравнению с ПВХ-аналогами. Ширина ткани может составлять до пяти метров, что позволяет обойтись без шовных соединений даже в достаточно больших по площади комнатах.
-Основные достоинства тканевых потолков:
-                                    <ol>
-                                        <li><p>Устойчивы к повреждениям и разрывам;</p></li>
-                                        <li><p>Экологически безопасны;</p></li>
-                                        <li><p>Улучшают звукоизоляцию;</p></li>
-                                        <li><p>Не выгорают и не желтеют.</p></li>
-                                    </ol>
+                                        <p>Главная особенность данного типа материалов – в его основе лежит не поливинилхлоридная пленка, а полиэстер,
+                                            обработанный полиуретаном. Благодаря этому он многократно прочнее по сравнению с ПВХ-аналогами. Ширина
+                                            ткани может составлять до пяти метров, что позволяет обойтись без шовных соединений даже в достаточно
+                                            больших по площади комнатах. Основные достоинства тканевых потолков:</p>
+                                        <ol>
+                                            <li><p>Устойчивы к повреждениям и разрывам;</p></li>
+                                            <li><p>Экологически безопасны;</p></li>
+                                            <li><p>Улучшают звукоизоляцию;</p></li>
+                                            <li><p>Не выгорают и не желтеют.</p></li>
+                                        </ol>
                                         <p>В то время как к недостаткам относятся влагонепроницаемость и невозможность повторного монтажа.</p>
                                     </div>
                                 </div>
-							</div>
-						</div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="section-head text-center space30">
-						<h3>По фактуре полотна</h3>
-					</div>
-                        <div class = 'space20'> </div>
+                    <div class="section-head text-center space30">
+                        <h3>По фактуре полотна</h3>
+                    </div>
+                    <div class='space20'></div>
                     <div class="clearfix"></div>
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingThree">
-								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-									Глянцевые
-									</a>
-								</h4>
-							</div>
-							<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-								<div class="panel-body">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true"
+                                       aria-controls="collapseThree">
+                                        Глянцевые
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
                                     <div class="text-justify">
-									<p>В последнее время глянцевые натяжные потолки пользуются особой популярностью. Они дорого и современно смотрятся, визуально расширяя всё пространство. Такой потолок чаще всего устанавливают на кухне или ванной, а также в гостиной и спальне.
-Достоинства глянцевых натяжных потолков:
-                                    </p>
-                                    <ol>
-                                        <li>Эффектный внешний вид независимо от выбранной расцветки;</li>
-                                        <li>Влагостойкость;</li>
-                                        <li>Антистатичность;</li>
-                                        <li>Отражение света;</li>
-                                        <li>Универсальность;</li>
-                                        <li>Нетребовательность к уходу.</li>
-                                    </ol>
-                                    Кроме того, такие потолки монтируются всего за несколько часов с минимумом пыли и грязи, а также отлично скрывают любые дефекты потолочного пространства и эффективно маскируют коммуникации.
+                                        <p>В последнее время глянцевые натяжные потолки пользуются особой популярностью. Они дорого и современно
+                                            смотрятся, визуально расширяя всё пространство. Такой потолок чаще всего устанавливают на кухне или
+                                            ванной, а также в гостиной и спальне. Достоинства глянцевых натяжных потолков:
+                                        </p>
+                                        <ol>
+                                            <li><p>Эффектный внешний вид независимо от выбранной расцветки;</p></li>
+                                            <li><p>Влагостойкость;</p></li>
+                                            <li><p>Антистатичность;</p></li>
+                                            <li><p>Отражение света;</p></li>
+                                            <li><p>Универсальность;</p></li>
+                                            <li><p>Нетребовательность к уходу.</p></li>
+                                        </ol>
+                                        <p>Кроме того, такие потолки монтируются всего за несколько часов с минимумом пыли и грязи, а также отлично
+                                            скрывают любые дефекты потолочного пространства и эффективно маскируют коммуникации.</p>
                                     </div>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingFour">
-								<h4 class="panel-title">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									Сатиновые
-									</a>
-								</h4>
-							</div>
-							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-								<div class="panel-body">
-                                    <div class="text-justify">
-                                    <p>Сатиновые натяжные потолки предназначены для тех, кто считает глянцевые потолки слишком яркими, а матовые – слишком тусклыми. Они отлично впишутся в любую комнату и сделают её уютной и элегантной.
-Плюсы сатиновых натяжных потолков примерно такие же, как и у других типов полотен, но есть и отличия.
-В первую очередь здесь следует отметить:
-                                    </p>
-                                    </div>
-                                    <ol>
-                                        <li>Разнообразие доступных цветов и оттенков;</li>
-                                        <li>Наиболее качественная фотопечать;</li>
-                                        <li>Высокая скорость монтажа;</li>
-                                        <li>Простота и долговечность эксплуатации.</li>
-                                    </ol>
-
                                 </div>
-							</div>
-						</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                                       aria-expanded="false" aria-controls="collapseFour">
+                                        Сатиновые
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <div class="text-justify">
+                                        <p>Сатиновые натяжные потолки предназначены для тех, кто считает глянцевые потолки слишком яркими, а матовые –
+                                            слишком тусклыми. Они отлично впишутся в любую комнату и сделают её уютной и элегантной.
+                                            Плюсы сатиновых натяжных потолков примерно такие же, как и у других типов полотен, но есть и отличия.
+                                            В первую очередь здесь следует отметить:
+                                        </p>
+                                    </div>
+                                    <ol>
+                                        <li><p>Разнообразие доступных цветов и оттенков;</p></li>
+                                        <li><p>Наиболее качественная фотопечать;</p></li>
+                                        <li><p>Высокая скорость монтажа;</p>
+                                        <li><p>Простота и долговечность эксплуатации.</p></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingFive">
-								<h4 class="panel-title">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-									Матовые
-									</a>
-								</h4>
-							</div>
-							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-								<div class="panel-body">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                                       aria-expanded="false" aria-controls="collapseFive">
+                                        Матовые
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
                                     <div class="text-justify">
-                                    <p>Данный вид отделки в последнее время стал не просто весьма распространенным, а классическим. Он может иметь как традиционный дизайн, близкий по внешнему виду к побелке/покраске, так и представлять собой что-то яркое, оригинальное, интересное – все зависит от выбранного вами полотна и типа декора.
-Помимо красоты следует отметить и следующие достоинства:
+                                        <p>Данный вид отделки в последнее время стал не просто весьма распространенным, а классическим. Он может иметь
+                                            как традиционный дизайн, близкий по внешнему виду к побелке/покраске, так и представлять собой что-то
+                                            яркое, оригинальное, интересное – все зависит от выбранного вами полотна и типа декора.
+                                            Помимо красоты следует отметить и следующие достоинства:
                                     </div>
-                                    <p><ol>
-                                        <li>Антистатичность;</li>
-                                        <li>Долговечность;</li>
-                                        <li>Стойкость к воздействию влаги;</li>
-                                        <li>Не бликует и не выцветает;</li>
-                                        <li>Абсолютно безопасен для здоровья.</li>
+                                    <ol>
+                                        <li><p>Антистатичность;</p></li>
+                                        <li><p>Долговечность;</p></li>
+                                        <li><p>Стойкость к воздействию влаги;</p></li>
+                                        <li><p>Не бликует и не выцветает;</p></li>
+                                        <li><p>Абсолютно безопасен для здоровья.</p></li>
                                     </ol>
-                                    </p>
                                 </div>
-								</div>
-							</div>
-						</div>
+                            </div>
                         </div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-        <!-- FOOTER -->
-        <footer class="footer2" id="footer2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <a href="index-2.html" class="footer-logo"><img
-                                src="{% static "images/logo.png" %}" /></a>
-                        <div class="space20"></div>
-                    </div>
-
-                    <div class="col-md-5 right-align">
-                        <h5>Контакты</h5>
-
-                        <div class="footer-social space10">
-                            <a href="#" class="fa fa-vk"></a>
-                            <a href="#" class="fa fa-odnoklassniki"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </div>
-                        <p>г. Новосибирск, +7 953 798 72 98</p>
-
                     </div>
                 </div>
-            </div>
-        </footer>
 
-        <!-- COPYRIGHT -->
-        <div class="footer-copy">
-            <div class="container">
-                &copy; 2020. Потолочный мастер.
             </div>
         </div>
     </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer2" id="footer2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <a href="index-2.html" class="footer-logo"><img src="{% static 'images/logo.png' %}"/></a>
+                <div class="space20"></div>
+            </div>
+
+            <div class="col-md-5 right-align">
+                <h3>Контакты</h3>
+                <h5>+7 953 798 72 98</h5>
+                <p>г. Новосибирск</p>
+                <div class="space10"></div>
+                <div class="footer-social space10">
+                    <a href="#" class="fa fa-vk"></a>
+                    <a href="#" class="fa fa-odnoklassniki"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- COPYRIGHT -->
+<div class="footer-copy">
+    <div class="container">
+        &copy; 2020. Потолочный мастер.
+    </div>
+</div>
+</div>
 
 
 <!-- JAVASCRIPT =============================-->
-    <script src="{% static "js/jquery.js" %}"></script>
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/vendors/slick/slick.min.js" %}"></script>
-    <script src="{% static "js/vendors/jquery.easing.min.js" %}"></script>
-    <script src="{% static "js/vendors/stellar.js" %}"></script>
-    <script src="{% static "js/vendors/isotope/isotope.pkgd.js" %}"></script>
-    <script src="{% static "js/vendors/swipebox/js/jquery.swipebox.min.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
-    <script src="{% static "js/vendors/mc/jquery.ketchup.all.min.js" %}"></script>
-    <script src="{% static "js/vendors/mc/main.js" %}"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendors/slick/slick.min.js' %}"></script>
+<script src="{% static 'js/vendors/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/vendors/stellar.js' %}"></script>
+<script src="{% static 'js/vendors/isotope/isotope.pkgd.js' %}"></script>
+<script src="{% static 'js/vendors/swipebox/js/jquery.swipebox.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/vendors/mc/jquery.ketchup.all.min.js' %}"></script>
+<script src="{% static 'js/vendors/mc/main.js' %}"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="{% static "js/vendors/gmap.js" %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="{% static 'js/vendors/gmap.js' %}"></script>
 
 </body>
 
