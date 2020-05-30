@@ -33,9 +33,11 @@
     <link rel="stylesheet" href="https://bootstraptema.ru/snippets/slider/2016/cfb/jquery.carousel.fullscreen.css"/>
     <link rel="stylesheet" href="{% static 'css/jquery.carousel.fullscreen.css' %}"/>
 
+    <!--JIVOSITE -->
+    <script src="//code-ya.jivosite.com/widget/iPw4v4AtXZ" async></script>
+
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <!-- TO UP -->
     <script type="text/javascript">
@@ -48,13 +50,15 @@
         }
         });
         $('#toTop').click(function() {
-        $('body,html').animate({scrollTop:0},800);
+        $('body,html').animate({scrollTop:0},700);
         });
         });
     </script>
 
 </head>
-<div id="toTop"><img src="{% static 'images/arrow.png' %}" class="pull-center" width=70% alt=""/></div>
+
+<!-- BUTTON TO UP -->
+<div id="toTop"><img src="{% static 'images/arrow.png' %}" class="pull-left" width=70% alt=""/></div>
 <body id="page-top">
 
 <div class="body">
@@ -531,7 +535,7 @@
 </div>
 
 
-<!-- JAVASCRIPT =============================-->
+<!-- JAVASCRIPT -->
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/vendors/slick/slick.min.js' %}"></script>
@@ -543,8 +547,6 @@
 <script src="{% static 'js/vendors/mc/jquery.ketchup.all.min.js' %}"></script>
 <script src="{% static 'js/vendors/mc/main.js' %}"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script src="{% static 'js/vendors/gmap.js' %}"></script>
 
 </body>
 

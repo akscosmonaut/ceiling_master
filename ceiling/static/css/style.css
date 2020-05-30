@@ -263,8 +263,7 @@ ul, ol, li {
 	padding: 20px 0;
 }
 
-.mm-menu ,
-.navbar-right {
+.mm-menu , .navbar-right {
 	position: static !important;
 }
 
@@ -3778,8 +3777,8 @@ input:focus, textarea:focus {
     text-align:center;
     padding:5px;
     position:fixed;
-    bottom:10px; /* отступ кнопки от нижнего края страницы*/
-    right:10px;
+    bottom:10px;
+    left:10px;
     cursor:pointer;
     display:none;
     z-index: 999999;
@@ -3814,4 +3813,24 @@ vertical-align: middle;
 
 .arrows{
 margin-top: 50px;
+}
+
+.bg-table{
+    background: #fff;
+}
+
+.bg-table th {
+	font-size: 20px;
+	font-weight: 600;
+
+}
+
+.bg-table td {
+	font-size: 18px;
+}
+
+
+.price-block{
+    background: #dde7f6;
+    background-size: cover;
 }

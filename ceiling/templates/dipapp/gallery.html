@@ -6,43 +6,54 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
     <title>Потолочный мастер</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="static/images/favicon.html">
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="{% static "css/icons/fontawesome/css/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/style.css" %}" />
-    <link rel="stylesheet" href="{% static "css/icons/icon2/style.css" %}" />
-    <link rel="stylesheet" href="{% static "js/vendors/swipebox/css/swipebox.min.css" %}" />
-    <link rel="stylesheet" href="{% static "css/ilmosys-icons.css" %}" />
+    <link rel="stylesheet" href="{% static 'css/icons/fontawesome/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/icons/icon2/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'js/vendors/swipebox/css/swipebox.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/ilmosys-icons.css' %}"/>
 
     <!-- THEME / PLUGIN CSS -->
-    <link rel="stylesheet" href="{%static "js/vendors/slick/slick.css" %}" />
-    <link rel="stylesheet" href="{%static "css/style.css" %}" />
-
+    <link rel="stylesheet" href="{%static 'js/vendors/slick/slick.css' %}"/>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--JIVOSITE -->
     <script src="//code-ya.jivosite.com/widget/iPw4v4AtXZ" async></script>
+
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <!-- TO UP -->
+    <script type="text/javascript">
+        $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},700);
+        });
+        });
+    </script>
 
 </head>
+
+<div id="toTop"><img src="{% static 'images/arrow.png' %}" class="pull-left" width=70% alt=""/></div>
 <body id="page-top">
 
 <div class="body">
@@ -54,13 +65,11 @@
                     <a href="index" class="navbar-brand brand"><img
                             src="{% static 'images/logo.png' %}" class="img-fluid"/></a>
                 </div>
-
                 <button type="button" class="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"
                         aria-expanded="false">
                 </button>
-
                 <div class="collapse navbar-collapse"
                      id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -88,68 +97,63 @@
         </nav>
     </header>
 
-          <div class="space100 other-menu">
-        </div>
+    <div class="space100 other-menu"></div>
 
     <div class="complete-works">
-             <div class="text-center">
-                    <div class="container">
-                        <h3>Готовые работы</h3>
-                    </div>
-                </div>
-
-        </div>
-
-
-    <div class="row justify-content-center elements-content">
-        <div class="container">
-    <div class="col-md-12">
-        <div class="row">
-            <a href="{% static 'images/mainceiling/1.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/1.jpg' %}" class="img-fluid" width="100%">
-            </a>
-            <a href="{% static 'images/mainceiling/2.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/2.jpg' %}" class="img-fluid" width="100%">
-            </a>
-            <a href="{% static 'images/mainceiling/3.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/3.jpg' %}" class="img-fluid" width="100%">
-            </a>
-        </div>
-        <div class="space10"></div>
-        <div class="row">
-            <a href="{% static 'images/mainceiling/4.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/4.jpg' %}" class="img-fluid" width="100%">
-            </a>
-            <a href="{% static 'images/mainceiling/5.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/5.jpg' %}" class="img-fluid" width="100%">
-            </a>
-            <a href="{% static 'images/mainceiling/6.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/6.jpg' %}" class="img-fluid" width="100%">
-            </a>
-        </div>
-        <div class="space10"></div>
-        <div class="row">
-            <a href="{% static 'images/mainceiling/7.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/7.jpg' %}" class="img-fluid" width="100%">
-            </a>
-            <a href="{% static 'images/mainceiling/8.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/8.jpg' %}" class="img-fluid" width="100%">
-            </a>
-            <a href="{% static 'images/mainceiling/9.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="{% static 'images/mainceiling/9.jpg' %}" class="img-fluid" width="100%">
-            </a>
+        <div class="text-center">
+            <div class="container">
+                <h3>Готовые работы</h3>
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- GALLERY -->
+    <div class="row justify-content-center elements-content">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <a href="{% static 'images/mainceiling/1.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/1.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                    <a href="{% static 'images/mainceiling/2.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/2.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                    <a href="{% static 'images/mainceiling/3.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/3.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                </div>
+                <div class="space10"></div>
+                <div class="row">
+                    <a href="{% static 'images/mainceiling/4.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/4.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                    <a href="{% static 'images/mainceiling/5.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/5.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                    <a href="{% static 'images/mainceiling/6.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/6.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                </div>
+                <div class="space10"></div>
+                <div class="row">
+                    <a href="{% static 'images/mainceiling/7.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/7.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                    <a href="{% static 'images/mainceiling/8.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/8.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                    <a href="{% static 'images/mainceiling/9.jpg' %}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="{% static 'images/mainceiling/9.jpg' %}" class="img-fluid" width="100%">
+                    </a>
+                </div>
+            </div>
         </div>
+    </div>
 
+    <div class="space100 other-menu"></div>
 
-    <!-- INFO CONTENT -->
-        <div class="space100 other-menu">
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="footer2" id="footer2">
+    <!-- FOOTER -->
+    <footer class="footer2" id="footer2">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
@@ -173,39 +177,39 @@
         </div>
     </footer>
 
-        <!-- COPYRIGHT -->
-        <div class="footer-copy">
-            <div class="container">
-                &copy; 2020. Потолочный мастер.
-            </div>
+    <!-- COPYRIGHT -->
+    <div class="footer-copy">
+        <div class="container">
+            &copy; 2020. Потолочный мастер.
         </div>
     </div>
+</div>
 
 
-<!-- JAVASCRIPT =============================-->
-    <script src="{% static "js/jquery.js" %}"></script>
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/vendors/slick/slick.min.js" %}"></script>
-    <script src="{% static "js/vendors/jquery.easing.min.js" %}"></script>
-    <script src="{% static "js/vendors/stellar.js" %}"></script>
-    <script src="{% static "js/vendors/isotope/isotope.pkgd.js" %}"></script>
-    <script src="{% static "js/vendors/swipebox/js/jquery.swipebox.min.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
-    <script src="{% static "js/vendors/mc/jquery.ketchup.all.min.js" %}"></script>
-    <script src="{% static "js/vendors/mc/main.js" %}"></script>
+<!-- JAVASCRIPT -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendors/slick/slick.min.js' %}"></script>
+<script src="{% static 'js/vendors/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/vendors/stellar.js' %}"></script>
+<script src="{% static 'js/vendors/isotope/isotope.pkgd.js' %}"></script>
+<script src="{% static 'js/vendors/swipebox/js/jquery.swipebox.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/vendors/mc/jquery.ketchup.all.min.js' %}"></script>
+<script src="{% static 'js/vendors/mc/main.js' %}"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="{% static "js/vendors/gmap.js" %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<!-- SCRIPTS FOR GALLERY --->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-
-    <script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+<!-- ACTION FOR OPENNING PHOTO -->
+<script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
-            });</script>
+            });
+</script>
 
 </body>
 

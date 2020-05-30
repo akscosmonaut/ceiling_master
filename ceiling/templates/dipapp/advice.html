@@ -4,6 +4,7 @@
 {% load staticfiles %}
 
 <head>
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Потолочный мастер</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +26,32 @@
     <link rel="stylesheet" href="{%static 'js/vendors/slick/slick.css' %}"/>
     <link rel="stylesheet" href="{%static 'css/style.css' %}"/>
 
+    <!--JIVOSITE -->
+    <script src="//code-ya.jivosite.com/widget/iPw4v4AtXZ" async></script>
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <!-- TO UP -->
+    <script type="text/javascript">
+        $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},700);
+        });
+        });
+    </script>
 
 </head>
 
+<div id="toTop"><img src="{% static 'images/arrow.png' %}" class="pull-left" width=70% alt=""/></div>
 <body id="page-top">
 
 <div class="body">
@@ -42,13 +63,11 @@
                     <a href="index" class="navbar-brand brand"><img
                             src="{% static 'images/logo.png' %}" class="img-fluid"/></a>
                 </div>
-
                 <button type="button" class="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"
                         aria-expanded="false">
                 </button>
-
                 <div class="collapse navbar-collapse"
                      id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -76,6 +95,7 @@
         </nav>
     </header>
 
+    <!-- INTRO -->
     <div class="intro intro8">
         <div class="advice-intro">
             <div class="container">
@@ -206,7 +226,7 @@
 </div>
 
 
-<!-- JAVASCRIPT =============================-->
+<!-- JAVASCRIPT -->
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/vendors/slick/slick.min.js' %}"></script>
@@ -217,9 +237,6 @@
 <script src="{% static 'js/main.js' %}"></script>
 <script src="{% static 'js/vendors/mc/jquery.ketchup.all.min.js' %}"></script>
 <script src="{% static 'js/vendors/mc/main.js' %}"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script src="{% static 'js/vendors/gmap.js' %}"></script>
 
 </body>
 
